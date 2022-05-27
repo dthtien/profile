@@ -11,7 +11,7 @@ export default function Example() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
-        <h2 className="text-lg leading-6 font-medium text-gray-900">Technical skills</h2>
+        <h2 className="text-lg leading-6 font-extrabold text-gray-900">Technical skills</h2>
       </div>
       <div className="border-t border-gray-200">
         <dl>
