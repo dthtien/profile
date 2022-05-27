@@ -1,7 +1,6 @@
-import { Fragment } from 'react'
+import { FC, Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import type { NextPage } from 'next'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -10,7 +9,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-const Nav: NextPage = () => (
+const Nav: FC = () => (
   <Popover>
     <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
       <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">

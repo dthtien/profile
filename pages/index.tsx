@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Skills from '../components/Skills';
 
 
 const Home: NextPage = () => {
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
         <p className="text-base text-gray-500 sm:mt-2 sm:text-lg sm:mx-auto md:mt-2 md:text-xl lg:mx-0">
           I'm looking for a chance to gain work experience as a Software Engineer, opportunities to develop my skills, take on interesting projects, and work with people I can learn from. Willing to work hard and excited to continue learning new skills to become a successful developer.
         </p>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
           <div className="rounded-md shadow">
             <a
               href="#"
@@ -34,6 +35,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+
+      <Skills />
     </main>
   )
 }
