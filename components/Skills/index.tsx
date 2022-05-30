@@ -18,7 +18,11 @@ export default function Example() {
           <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm text-gray-500 font-extrabold">Programming languages</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-              Ruby, Javascript, HTML5, CSS3, Slim, Haml, CoffeeScript
+              <Icon alt="Ruby" src="/icons/ruby-programming-language.svg"/>
+              <Icon alt="Javascript" src="/icons/javascript-programming-language.svg"/>
+              <Icon alt="HTML5" src="/icons/html.svg"/>
+              <Icon alt="CSS3" src="/icons/css.svg"/>
+              <Icon alt="Typescript" src="/icons/typescript-programming-language.svg"/>
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -34,22 +38,30 @@ export default function Example() {
           </div>
           <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-extrabold text-gray-500">Cloud platforms</dt>
-            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">AWS EC2, Heroku</dd>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+              <Icon src='/icons/aws_ec2.png' alt='AWS EC2'/>
+              <Icon src='/icons/heroku.svg' alt='Heroku'/>
+            </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-extrabold text-gray-500">Server administration</dt>
-            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Ubuntu server, Nginx</dd>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+              <Icon src='/icons/linux-ubuntu.svg' alt='Ubuntu server'/>
+              <Icon src='/icons/nginx.svg' alt='Nginx'/>
+            </dd>
           </div>
           <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-extrabold text-gray-500">Storage</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-              PostgreSQL
+              <Icon src='/icons/postgresql.svg' alt='Postgresql'/>
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-extrabold text-gray-500">Tools</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-              Vim, Git, Alacritty
+              <Icon src='/icons/neovim.svg' alt='Neovim'/>
+              <Icon src='/icons/git.svg' alt='Git'/>
+              <Icon src='/icons/alacritty.svg' alt='Alacritty'/>
             </dd>
           </div>
           <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
