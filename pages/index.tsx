@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Skills from '../components/Skills';
-
+import WorkExperience from '../components/WorkExperience'
+import Certifications from '../components/Certifications'
 
 const Home: NextPage = () => {
   return (
@@ -37,6 +38,8 @@ const Home: NextPage = () => {
       </div>
 
       <Skills />
+      <WorkExperience />
+      <Certifications />
     </main>
   )
 }
