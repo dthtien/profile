@@ -16,7 +16,7 @@ const Item: FC<{ title: string; icons: { alt: string; src: string }[] }> = ({
       <dt className="text-sm text-gray-500 font-extrabold">{title}</dt>
       <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
         {icons.map(({ alt, src }) => (
-          <Icon alt={alt} src={src} />
+          <Icon alt={alt} key={alt} src={src} />
         ))}
       </dd>
     </div>
