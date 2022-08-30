@@ -22,7 +22,8 @@ const Item: FC<{ title: string; icons: { alt: string; src: string }[] }> = ({
     </div>
   );
 };
-export default () => (
+
+const Skills = () => (
   <div className="bg-white shadow overflow-hidden sm:rounded-lg">
     <div className="px-4 py-5 sm:px-6">
       <h1 className="text-2xl leading-6 font-extrabold text-gray-900">
@@ -113,3 +114,5 @@ export default () => (
     </div>
   </div>
 );
+
+export default Skills;

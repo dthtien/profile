@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const callouts = [
   {
     name: "Employment Hero",
@@ -28,7 +30,7 @@ const callouts = [
   },
 ];
 
-export default () => (
+const Certifications = () => (
   <div className="bg-white shadow overflow-hidden sm:rounded-lg mt-3">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto py-3 lg:max-w-none">
@@ -37,7 +39,8 @@ export default () => (
           {callouts.map((callout) => (
             <div key={callout.name} className="group relative">
               <div className="relative w-full h-80 bg-gray-100 rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                <img
+                <Image
+                  layout="fill"
                   src={callout.imageSrc}
                   alt={callout.imageAlt}
                   className="w-full h-full object-center"
@@ -60,3 +63,5 @@ export default () => (
     </div>
   </div>
 );
+
+export default Certifications;
