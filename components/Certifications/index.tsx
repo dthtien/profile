@@ -77,6 +77,7 @@ const Certifications = () => {
                   key={certitfication.name}
                   href={certitfication.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="flex mb-4 sm:justify-start even:bg-white odd:bg-slate-50 px-6 py-3"
                 >
                   <div className="relative items-center h-12 w-14 mt-3 mr-3 bg-gray-100 p-2 rounded-lg">

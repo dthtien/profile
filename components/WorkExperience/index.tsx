@@ -45,6 +45,7 @@ const WorkExperience = () => (
             <a
               href={job.href}
               target="_blank"
+              rel="noreferrer"
               key={job.name}
               className="flex mb-4 sm:justify-start even:bg-white odd:bg-slate-50 px-6 py-3"
             >
