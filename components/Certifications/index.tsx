@@ -71,7 +71,7 @@ const Certifications = () => {
           </h2>
           <div className="mt-6">
             {certifications
-              .slice(0, isShowAll ? certifications.length : 4)
+              .slice(0, isShowAll ? certifications.length : 3)
               .map((certitfication) => (
                 <a
                   key={certitfication.name}
