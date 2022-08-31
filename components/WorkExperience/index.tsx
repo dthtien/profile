@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const callouts = [
+const experiences = [
   {
     name: "Employment Hero",
     title: "Fullstack devloper - Ruby and ReactJS",
@@ -39,30 +39,30 @@ const WorkExperience = () => (
       <div className="max-w-2xl mx-auto py-3 lg:max-w-none">
         <h2 className="text-2xl px-6 font-bold text-gray-900">Work Experience</h2>
         <div className="mt-6">
-          {callouts.map((callout) => (
+          {experiences.map((job) => (
             <div
-              key={callout.name}
+              key={job.name}
               className="flex mb-4 sm:justify-start even:bg-white odd:bg-slate-50 px-6 py-3"
             >
               <div className="relative items-center h-12 w-14 mt-3 mr-3 bg-gray-100 p-2 rounded-lg">
                 <Image
                   layout="fill"
-                  src={callout.imageSrc}
-                  alt={callout.imageAlt}
+                  src={job.imageSrc}
+                  alt={job.imageAlt}
                   className="w-full h-full object-center object-contain"
                 />
               </div>
               <div>
                 <h3 className="text-base font-semibold text-gray-900">
-                  {callout.name}
+                  {job.name}
                 </h3>
                 <h3 className="text-sm text-gray-500">
-                  <a href={callout.href}>
+                  <a href={job.href}>
                     <span className="absolute inset-0" />
-                    {callout.title}
+                    {job.title}
                   </a>
-                  <p className="text-gray-500">{callout.time}</p>
-                  <p className="text-gray-500">{callout.address}</p>
+                  <p className="text-gray-500">{job.time}</p>
+                  <p className="text-gray-500">{job.address}</p>
                 </h3>
               </div>
             </div>
