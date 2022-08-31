@@ -3,10 +3,8 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Profile', href: '#' },
+  { name: 'Todo', href: '/todo' },
 ]
 
 const Nav: FC = () => (
@@ -29,9 +27,6 @@ const Nav: FC = () => (
               {item.name}
             </a>
           ))}
-          <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-            Log in
-          </a>
         </div>
       </nav>
     </div>
@@ -69,12 +64,6 @@ const Nav: FC = () => (
               </a>
             ))}
           </div>
-          <a
-            href="#"
-            className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-          >
-            Log in
-          </a>
         </div>
       </Popover.Panel>
     </Transition>
