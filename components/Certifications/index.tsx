@@ -100,34 +100,36 @@ const Certifications = () => {
               ))}
           </div>
 
-          {isShowAll ? (
-            <button
-              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-3 py-3 text-base font-medium text-white hover:bg-indigo-700 md:text-lg"
-              onClick={() => setIsShowAll(false)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
+          <div className="align-middle flex justify-center items-center">
+            {isShowAll ? (
+              <button
+                className="rounded-md border border-transparent bg-indigo-600 px-3 py-3 text-base font-medium text-white hover:bg-indigo-700 md:text-lg"
+                onClick={() => setIsShowAll(false)}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
-                />
-              </svg>
-            </button>
-          ) : (
-            <button
-              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-3 py-3 text-base font-medium text-white hover:bg-indigo-700 md:text-lg"
-              onClick={() => setIsShowAll(true)}
-            >
-              {`Show all ${certifications.length} certifications`}
-            </button>
-          )}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </button>
+            ) : (
+              <button
+                className="rounded-md border border-transparent bg-indigo-600 px-3 py-3 text-base font-medium text-white hover:bg-indigo-700 md:text-lg"
+                onClick={() => setIsShowAll(true)}
+              >
+                {`Show all ${certifications.length} certifications`}
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
