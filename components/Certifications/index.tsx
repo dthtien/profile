@@ -43,6 +43,14 @@ const certifications = [
     href: "https://www.coursera.org/account/accomplishments/certificate/JFR8LYJL74QA",
   },
   {
+    name: "Web security with the OWASP testing framework",
+    provider: "Robusta Technology and Training",
+    time: "Mar 2020",
+    logoSrc: "/icons/robusta.png",
+    logoAlt: "Robusta Technology and Training",
+    href: "https://robusta.vn/vi/chuong-trinh-dao-tao/bao-mat-an-toan-thong-tin/cac-khoa-bao-mat-khac/danh-gia-bao-mat-ung-dung-web-theo-chuan-owasp",
+  },
+  {
     name: "PTE - 50",
     provider: "Pearson",
     time: "Apr 2022",
