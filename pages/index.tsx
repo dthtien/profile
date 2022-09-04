@@ -3,6 +3,7 @@ import Skills from "../components/Skills";
 import WorkExperience from "../components/WorkExperience";
 import Certifications from "../components/Certifications";
 import Contacts from "../components/Contacts";
+import Education from "../components/Educations";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
       </div>
       <Skills />
       <WorkExperience />
+      <Education />
       <Certifications />
       <Contacts />
     </main>
