@@ -10,6 +10,14 @@ const educations = [
     href: "https://www.uit.edu.vn/",
     grade: "Good - 7.59",
   },
+  {
+    name: "CoderSchool",
+    degree: "June Ruby course",
+    time: "June 2017 - Aug 2017",
+    logoSrc: "/icons/coderschool.svg",
+    logoAlt: "coderschool",
+    href: "https://www.coderschool.vn/en/",
+  },
 ];
 
 const Education = () => {
@@ -43,7 +51,11 @@ const Education = () => {
                     {edu.degree}
                     <p className="text-gray-500">{edu.time}</p>
                   </h3>
-                  <h3 className="text-sm text-gray-500">Grade: {edu.grade}</h3>
+                  {edu.grade && (
+                    <h3 className="text-sm text-gray-500">
+                      Grade: {edu.grade}
+                    </h3>
+                  )}
                 </div>
               </a>
             ))}
