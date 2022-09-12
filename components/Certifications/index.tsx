@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const certifications = [
   {
-    name: "Mellori logo Principles & Design Patterns of React Programming",
+    name: "Principles & Design Patterns of React Programming",
     provider: "Mellori",
     time: "June 2022",
     logoSrc: "/icons/mellori.jpeg",
