@@ -43,18 +43,6 @@ const Skills = () => (
               alt: "Javascript",
               src: "/icons/javascript-programming-language.svg",
             },
-            {
-              alt: "HTML5",
-              src: "/icons/html.svg",
-            },
-            {
-              alt: "CSS3",
-              src: "/icons/css.svg",
-            },
-            {
-              alt: "Typescript",
-              src: "/icons/typescript-programming-language.svg",
-            },
           ]}
         />
         <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -64,9 +52,6 @@ const Skills = () => (
           <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
             <Icon src="/icons/ruby-on-rails.svg" alt="Ruby on Rails" />
             <Icon src="/icons/react-js.svg" alt="React JS" />
-            <Icon src="/icons/redux.svg" alt="Redux" />
-            <Icon src="/icons/tailwind-css.svg" alt="Tailwind css" />
-            <Icon src="/icons/bootstrap-5-logo.svg" alt="Bootstrap" />
             <Icon src="/icons/jquery.svg" alt="Jquery" />
           </dd>
         </div>
@@ -85,7 +70,6 @@ const Skills = () => (
           </dt>
           <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
             <Icon src="/icons/linux-ubuntu.svg" alt="Ubuntu server" />
-            <Icon src="/icons/nginx.svg" alt="Nginx" />
           </dd>
         </div>
         <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -105,9 +89,8 @@ const Skills = () => (
         <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
           <dt className="text-sm font-extrabold text-gray-500">Paradigms</dt>
           <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-            Event-driven Development, Behavior-driven Development, Test-driven Development,
-            Object-oriented Programming, Responsive Web Design,
-            Model-View-Controller
+            Event-driven Development, Test-driven Development,
+            Object-oriented Programming, Model-View-Controller
           </dd>
         </div>
       </dl>
