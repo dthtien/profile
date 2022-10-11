@@ -28,11 +28,11 @@ const Home: NextPage = () => {
           developer.
         </p>
       </div>
+      <Contacts />
       <Skills />
       <WorkExperience />
       <Education />
       <Certifications />
-      <Contacts />
     </main>
   );
 };
