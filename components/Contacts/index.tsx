@@ -5,7 +5,7 @@ const Contacts = () => (
     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
       <div className="rounded-md shadow">
         <a
-          href="https://drive.google.com/file/d/1XFASw7NYrWvTC7M1hQ-ZQ80iE-zwhwXh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1urchjVLs48jt2GkGYslaWUCEONea5Urz/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="w-full flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
