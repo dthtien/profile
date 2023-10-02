@@ -3,8 +3,17 @@ import Image from "next/image";
 const experiences = [
   {
     name: "Employment Hero",
+    title: "Fullstack devloper - Ruby on Rails",
+    time: "May 2023 - Present",
+    imageSrc: "/icons/gh.webp",
+    imageAlt: "Global Health (ASX:GLH) | Connecting Clinicians and Consumers",
+    href: "https://www.global-health.com/",
+    address: "Melbourne, Australia",
+  },
+  {
+    name: "Employment Hero",
     title: "Fullstack devloper - Ruby and ReactJS",
-    time: "April 2020 - Present",
+    time: "April 2020 - May 2023",
     imageSrc: "https://employmenthero.com/wp-content/uploads/2021/07/Full.svg",
     imageAlt: "All-In-One HR, Payroll & Benefits Platform",
     href: "https://employmenthero.com/",

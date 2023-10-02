@@ -51,12 +51,12 @@ const certifications = [
     href: "https://robusta.vn/vi/chuong-trinh-dao-tao/bao-mat-an-toan-thong-tin/cac-khoa-bao-mat-khac/danh-gia-bao-mat-ung-dung-web-theo-chuan-owasp",
   },
   {
-    name: "PTE - 50",
+    name: "PTE - 65",
     provider: "Pearson",
-    time: "Apr 2022",
+    time: "Sep 2023",
     logoSrc: "/icons/pearson.svg",
     logoAlt: "Peason",
-    href: "https://drive.google.com/file/d/1MAOS-HA0cQDgU_Qfu_rBr2Vp-yP7W62H/view?usp=sharing",
+    href: "/files/PTE.pdf",
   },
   {
     name: "Toeic - 815",
