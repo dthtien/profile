@@ -173,10 +173,16 @@ const Contacts = () => {
       message: message.value
     }
     setLoading(true)
-    fetch(`${process.env.API_URL}/api/v1/contact`, { method: 'POST', body: JSON.stringify(values)})
-      .then((res) => res.json())
+    fetch(
+      `${process.env.API_URL}/api/v1/contact`,
+      {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: new Headers({'content-type': 'application/json'})
+      }).then((res) => res.json())
       .then(() => {
         setLoading(false);
+        setError(null);
         setShowModal(false);
       }).catch(error => {
         setError({ message: error.message, status: error.status })
