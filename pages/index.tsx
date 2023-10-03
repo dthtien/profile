@@ -4,10 +4,16 @@ import WorkExperience from "../components/WorkExperience";
 import Certifications from "../components/Certifications";
 import Contacts from "../components/Contacts";
 import Education from "../components/Educations";
+import { useState } from "react";
+import Toast from "../components/Toast";
 
 const Home: NextPage = () => {
+  const [showToast, setShowToast] = useState(false);
   return (
     <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-18 lg:px-8 xl:mt-28">
+      {
+        showToast && <Toast message="Email sent successfully. Thank you!" setShowToast={setShowToast} />
+      }
       <div className="sm:text-center lg:text-left mb-5">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">Dau The Tien</span>
@@ -28,7 +34,7 @@ const Home: NextPage = () => {
           developer.
         </p>
       </div>
-      <Contacts />
+      <Contacts setShowToast={setShowToast} />
       <Skills />
       <WorkExperience />
       <Education />

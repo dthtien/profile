@@ -160,7 +160,7 @@ const Loading = () => (
 )
 
 
-const Contacts = () => {
+const Contacts = ({ setShowToast }: { setShowToast: (showToast: boolean) => void }) => {
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null | undefined>(null);
@@ -184,6 +184,7 @@ const Contacts = () => {
         setLoading(false);
         setError(null);
         setShowModal(false);
+        setShowToast(true);
       }).catch(error => {
         setError({ message: error.message, status: error.status })
         setLoading(false);
