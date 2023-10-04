@@ -206,7 +206,7 @@ const Contacts = ({ setShowToast }: { setShowToast: (showToast: boolean) => void
         <div className="mt-3 sm:mt-0 sm:ml-3">
           <a
             onClick={() => setShowModal(true)}
-            className="w-full flex items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
+            className="w-full flex cursor-pointer items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
             target="_blank"
             rel="noreferrer"
           >
