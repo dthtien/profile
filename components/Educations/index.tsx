@@ -37,11 +37,11 @@ const Education = () => {
               >
                 <div className="relative items-center h-12 w-14 mt-3 mr-3 bg-gray-100 p-2 rounded-lg">
                   <Image
-                    layout="fill"
                     src={edu.logoSrc}
                     alt={edu.logoAlt}
                     className="w-full h-full object-center object-contain"
-                  />
+                    fill
+                    sizes="100vw" />
                 </div>
                 <div>
                   <h3 className="text-base font-semibold text-gray-900">

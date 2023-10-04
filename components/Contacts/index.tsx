@@ -224,7 +224,15 @@ const Contacts = ({ setShowToast }: { setShowToast: (showToast: boolean) => void
           className="items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md text-white"
           rel="noreferrer"
         >
-          <Image src="/icons/github.svg" width={30} height={30} alt="github" />
+          <Image
+            src="/icons/github.svg"
+            width={30}
+            height={30}
+            alt="github"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a
           href="https://www.linkedin.com/in/dthtien/"
@@ -237,7 +245,10 @@ const Contacts = ({ setShowToast }: { setShowToast: (showToast: boolean) => void
             width={30}
             height={30}
             alt="linkedin"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a
           href="https://twitter.com/dthtien"
@@ -245,10 +256,18 @@ const Contacts = ({ setShowToast }: { setShowToast: (showToast: boolean) => void
           rel="noreferrer"
           className="items-center justify-center px-3 py-3 border border-transparent text-base font-medium rounded-md text-white"
         >
-          <Image src="/icons/twitter.svg" width={30} height={30} alt="twitter" />
+          <Image
+            src="/icons/twitter.svg"
+            width={30}
+            height={30}
+            alt="twitter"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
       </div>
     </div>
-  )};
+  );};
 
 export default Contacts;

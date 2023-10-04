@@ -3,7 +3,15 @@ import { FC } from "react";
 
 const Icon: FC<{ src: string; alt: string }> = ({ src, alt }) => (
   <span className="mr-2 ml-2 first:ml-0">
-    <Image src={src} width={30} height={30} alt={alt} />
+    <Image
+      src={src}
+      width={30}
+      height={30}
+      alt={alt}
+      style={{
+        maxWidth: "100%",
+        height: "auto"
+      }} />
   </span>
 );
 
