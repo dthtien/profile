@@ -131,7 +131,7 @@ const CV = () => {
               <li>Project Link:
                 <ul>
                   <li><a href="https://github.com/dthtien/deal-hub-backend" target="_blank">GitHub Repository: DealHub</a></li>
-                  <li><a href="https://www.beneficiumvilis.com/" target="_blank">Website</a></li>
+                  <li><a href="https://www.beneficiumvilis.com/" target="_blank">https://www.beneficiumvilis.com/</a></li>
                 </ul>
               </li>
             </ul>
