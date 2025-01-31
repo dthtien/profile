@@ -1,8 +1,20 @@
 import React from "react";
+import Toggle from "../components/Toggle";
 
 const CV = () => {
+  const handlePrint = () => {
+    window.print();
+  };
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+      <div className="print:hidden text-right">
+        <button
+          className="bg-blue-500 text-white px-4 py-2 rounded-md print:hidden"
+          onClick={handlePrint}
+        >
+          Print CV
+        </button>
+      </div>
       {/* Header */}
       <div className="text-center">
         <h1 className="text-3xl font-bold">THE TIEN DAU</h1>
@@ -45,7 +57,7 @@ const CV = () => {
           <a className="font-bold mb-1" href="https://www.global-health.com/" target="_blank">
             Global Health - Melbourne
           </a>
-          <p className="text-gray-600">Full-stack Developer (May 2023 - Present)</p>
+          <p className="text-gray-600 mt-1">Full-stack Developer (May 2023 - Present)</p>
           <ul className="list-disc list-inside text-gray-700 mt-2">
             <li>Implemented CI/CD and Testing procedures by creating an optimized GIT flow, setting up Bitbucket pipelines, and developing a unit test suite with over 80% code coverage</li>
             <li>Implemented the Hot Health application - the all-in-one patient engagement platform using <strong>Rails</strong>, <strong>Vue</strong>, <strong>Postgresql</strong> and <strong>Rspec</strong></li>
@@ -63,7 +75,7 @@ const CV = () => {
           <a href="https://employmenthero.com/" target="_blank" className="font-bold mb-1">
             Employment Hero - Ho Chi Minh
           </a>
-          <p className="text-gray-600">Full-stack Developer (April 2020 - May 2023)</p>
+          <p className="text-gray-600 mt-1">Full-stack Developer (April 2020 - May 2023)</p>
           <ul className="list-disc list-inside text-gray-700 mt-2">
             <li>Implemented security group setting features within management modules using Rails, Postgresql, Rspec, ReactJS, and Typescript</li>
             <li>Managed official employment documents within a document management system utilizing Rails, Postgresql, Rspec, ReactJS, Typescript, and React Native</li>
@@ -77,10 +89,10 @@ const CV = () => {
         </div>
 
         <div className="mt-3 border-b pb-2">
-          <a className="font-bold mb-1" href="http://www.scs71.com" >
+          <a className="font-bold mb-1" href="http://www.scs71.com" target="_blank">
             Cyber Logistics (Pty) Ltd - Ho Chi Minh
           </a>
-          <p className="text-gray-600">Full-stack Developer (Sept 2018 - Feb 2020)</p>
+          <p className="text-gray-600 mt-1">Full-stack Developer (Sept 2018 - Feb 2020)</p>
           <ul className="list-disc list-inside text-gray-700 mt-2">
             <li>Awarded the best growth of the year prize since 2018</li>
             <li>Optimized full-text search with Elasticsearch</li>
@@ -98,14 +110,86 @@ const CV = () => {
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Personal Projects</h2>
         <div className="mt-3">
-          <h3 className="font-bold">Dwf</h3>
-          <p className="text-gray-600">A distributed workflow runner using Sidekiq and Redis</p>
-          <a href="https://github.com/dthtien/wf" className="text-blue-500">GitHub</a>
+          <Toggle
+            buttonComponent={
+              <>
+                <h3 className="font-bold text-left">Deal Hub</h3>
+                <p className="text-gray-600">The website displays bargain details from AU online stores, updated every hour.</p>
+              </>
+            }
+          >
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Developed an application, focused on AU online stores' deals, utilizing ReactJS, and Rails as the technology stack.</li>
+              <li>Implemented CI/CD to run test and distribute the app to Vultr clould</li>
+              <li>Designed a user-friendly web-based UI inspired by Google Material Design, enhancing the overall user experience.</li>
+              <li>Deployed the front-end to Vercel, ensuring high availability and scalability of the application.</li>
+              <li>Utilized background processing with Sidekiq to scrape data daily, ensuring up-to-date and accurate information for users.</li>
+              <li>Implemented continuous integration with CircleCI, ensuring the stability and reliability of the application through automated testing and deployment.</li>
+              <li>Configured the backend with Nginx, Puma, and Let's Encrypt, optimizing performance and security.</li>
+              <li>Integrated various third-party APIs, including Facebook Graph API, and Slack, enhancing functionality and providing valuable insights.</li>
+              <li>Managed the project on GitHub, maintaining a clean and organized codebase for efficient collaboration and version control.</li>
+              <li>Project Link:
+                <ul>
+                  <li><a href="https://github.com/dthtien/deal-hub-backend" target="_blank">GitHub Repository: DealHub</a></li>
+                  <li><a href="https://www.beneficiumvilis.com/" target="_blank">Website</a></li>
+                </ul>
+              </li>
+            </ul>
+          </Toggle>
         </div>
         <div className="mt-3">
-          <h3 className="font-bold">TopLands</h3>
-          <p className="text-gray-600">A real estate statistics application for Ho Chi Minh</p>
-          <a href="https://github.com/dthtien/real_estate_researcher" className="text-blue-500">GitHub</a>
+          <Toggle
+            buttonComponent={
+              <>
+                <h3 className="font-bold text-left">Dwf</h3>
+                <p className="text-gray-600">A distributed workflow runner using Sidekiq and Redis</p>
+              </>
+            }
+          >
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Developed <strong>Dwf</strong>, a distributed workflow runner utilizing Sidekiq and Redis, enabling efficient background processing and storage of workflow state.</li>
+              <li>Implemented a comprehensive test suite using RSpec and SimpleCov to ensure thorough coverage of all possible scenarios, enhancing the reliability and stability of the application.</li>
+              <li>Integrated Continuous Integration with GitHub Actions, automating the build and testing process for seamless development and deployment.</li>
+              <li>Garnered significant recognition and popularity within the developer community, with numerous stars on GitHub and a high number of installations on RubyGem.</li>
+              <li>Published the RubyGem <code>wf</code>, providing developers with a powerful and user-friendly tool for managing and executing workflows.</li>
+              <li>Maintained clear and concise documentation, enabling easy adoption and understanding of the Dwf framework.</li>
+              <li>Ensured consistency in coding style and best practices, adhering to industry standards and guidelines.</li>
+              <li>Diligently proofread all code and documentation, eliminating errors and ensuring the highest quality and reliability of the application.</li>
+              <li>Project Links:
+                <ul>
+                  <li><a href="https://rubygems.org/gems/dwf" target="_blank">RubyGem: dwf</a></li>
+                  <li><a href="https://github.com/dthtien/wf" target="_blank">GitHub Repository: wf</a></li>
+                </ul>
+              </li>
+            </ul>
+          </Toggle>
+        </div>
+        <div className="mt-3">
+          <Toggle
+            buttonComponent={
+              <>
+                <h3 className="font-bold text-left">TopLands</h3>
+                <p className="text-gray-600">A real estate statistics application for Ho Chi Minh</p>
+              </>
+            }
+          >
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Developed a statistics application, <strong>TopLands</strong>, focused on Ho Chi Minh real estate prices, utilizing ReactJS, Redux, and Rails as the technology stack.</li>
+              <li>Implemented Capistrano to deploy the API to Azure VPS, ensuring smooth and efficient deployment processes.</li>
+              <li>Designed a user-friendly web-based UI inspired by Google Material Design, enhancing the overall user experience.</li>
+              <li>Deployed the front-end to Heroku, ensuring high availability and scalability of the application.</li>
+              <li>Utilized background processing with Sidekiq to scrape data daily, ensuring up-to-date and accurate information for users.</li>
+              <li>Implemented continuous integration with CircleCI, ensuring the stability and reliability of the application through automated testing and deployment.</li>
+              <li>Configured the backend with Nginx, Puma, and Let's Encrypt, optimizing performance and security.</li>
+              <li>Integrated various third-party APIs, including Facebook Graph API, Google Analytics, Skylight, and Slack, enhancing functionality and providing valuable insights.</li>
+              <li>Managed the project on GitHub, maintaining a clean and organized codebase for efficient collaboration and version control.</li>
+              <li>Project Link:
+                <ul>
+                  <li><a href="https://github.com/dthtien/real_estate_researcher" target="_blank">GitHub Repository: TopLands</a></li>
+                </ul>
+              </li>
+            </ul>
+          </Toggle>
         </div>
       </section>
 
