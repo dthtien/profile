@@ -33,8 +33,6 @@ const experiences = [
     name: "Vinova",
     title: "Fullstack developer - Ruby on Rails",
     time: "Jun 2017 - Jan 2018",
-    imageSrc:
-      "https://vinova.sg/wp-content/uploads/2022/07/Vinova_Logo_Red_signature.png",
     imageAlt:
       "The trusted mobile application and software partner for enterprises, SMEs, and startups since 2010.",
     href: "https://vinova.sg/",
@@ -59,12 +57,16 @@ const WorkExperience = () => (
               className="flex mb-4 sm:justify-start even:bg-white odd:bg-slate-50 px-6 py-3"
             >
               <div className="relative items-center h-12 w-14 mt-3 mr-3 bg-gray-100 p-2 rounded-lg">
-                <Image
-                  src={job.imageSrc}
-                  alt={job.imageAlt}
-                  className="w-full h-full object-center object-contain"
-                  fill
-                  sizes="100vw" />
+                {
+                  job.imageSrc && (
+                      <Image
+                        src={job.imageSrc}
+                        alt={job.imageAlt}
+                        className="w-full h-full object-center object-contain"
+                        fill
+                        sizes="100vw" />
+                  )
+                }
               </div>
               <div>
                 <h3 className="text-base font-semibold text-gray-900">
