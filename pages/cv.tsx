@@ -113,7 +113,7 @@ const CV = () => {
         <h2 className="text-xl font-semibold border-b pb-1">Personal Projects</h2>
         {
           projects.map((project) => (
-            <div className="mt-3">
+            <div className="mt-3" key={project.name}>
               <Toggle
                 buttonComponent={
                   <>
