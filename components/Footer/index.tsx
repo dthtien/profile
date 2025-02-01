@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default () => {
+const Footer = () => {
   return (
     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
       <a
@@ -22,3 +22,5 @@ export default () => {
     </div>
   )
 }
+
+export default Footer;
