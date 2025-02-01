@@ -23,8 +23,9 @@ const Home: NextPage = () => {
           </span>
         </h1>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          I'm a full-stack developer passionate about building software that
-          improves people's lives.
+          I'm a full-stack developer passionate about building software that improves people's lives.
+          I'm looking for a chance to gain work experience as a Software Engineer, opportunities to develop my skills, take on exciting projects, and work with people I can learn.
+          Willing to work hard and excited to continue learning new skills to become a successful developer.
         </p>
         <p className="text-base text-gray-500 sm:mt-2 sm:text-lg sm:mx-auto md:mt-2 md:text-xl lg:mx-0">
           I'm looking for a chance to gain work experience as a Software

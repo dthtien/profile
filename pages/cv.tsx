@@ -32,8 +32,9 @@ const CV = () => {
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
         <p className="text-gray-700 mt-2">
-          Full-stack developer passionate about building software that improves people's lives.
-          Seeking opportunities to develop skills, take on exciting projects, and work with a team.
+          I'm a full-stack developer passionate about building software that improves people's lives.
+          I'm looking for a chance to gain work experience as a Software Engineer, opportunities to develop my skills, take on exciting projects, and work with people I can learn.
+          Willing to work hard and excited to continue learning new skills to become a successful developer.
         </p>
       </section>
 
