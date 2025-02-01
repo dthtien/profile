@@ -170,6 +170,7 @@ const CV = () => {
           <strong>Viet Nam National University HCMC - University Of Information Technology</strong>
           <br /> Bachelor of Engineering (Software) (2014 - 2019)
         </p>
+        <p className="mt-2">Major: <strong>Information System</strong> </p>
       </section>
     </div>
   );
