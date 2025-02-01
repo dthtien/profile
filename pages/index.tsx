@@ -7,6 +7,7 @@ import Education from "../components/Educations";
 import { useState } from "react";
 import Toast from "../components/Toast";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   const [showToast, setShowToast] = useState(false);
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
       <Projects />
       <Education />
       <Certifications />
+      <Footer />
     </main>
   );
 };
