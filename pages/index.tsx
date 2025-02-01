@@ -6,6 +6,7 @@ import Contacts from "../components/Contacts";
 import Education from "../components/Educations";
 import { useState } from "react";
 import Toast from "../components/Toast";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   const [showToast, setShowToast] = useState(false);
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
       <Contacts setShowToast={setShowToast} />
       <Skills />
       <WorkExperience />
+      <Projects />
       <Education />
       <Certifications />
     </main>

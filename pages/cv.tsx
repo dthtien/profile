@@ -1,5 +1,6 @@
 import React from "react";
 import Toggle from "../components/Toggle";
+import { projects } from "../components/Projects";
 
 const CV = () => {
   const handlePrint = () => {
@@ -110,88 +111,56 @@ const CV = () => {
       {/* Personal Projects */}
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Personal Projects</h2>
-        <div className="mt-3">
-          <Toggle
-            buttonComponent={
-              <>
-                <h3 className="font-bold text-left">Deal Hub</h3>
-                <p className="text-gray-600">The website displays bargain details from AU online stores, updated every hour.</p>
-              </>
-            }
-          >
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Developed an application, focused on AU online stores' deals, utilizing ReactJS, and Rails as the technology stack.</li>
-              <li>Implemented CI/CD to run test and distribute the app to Vultr clould</li>
-              <li>Designed a user-friendly web-based UI inspired by Google Material Design, enhancing the overall user experience.</li>
-              <li>Deployed the front-end to Vercel, ensuring high availability and scalability of the application.</li>
-              <li>Utilized background processing with Sidekiq to scrape data daily, ensuring up-to-date and accurate information for users.</li>
-              <li>Implemented continuous integration with CircleCI, ensuring the stability and reliability of the application through automated testing and deployment.</li>
-              <li>Configured the backend with Nginx, Puma, and Let's Encrypt, optimizing performance and security.</li>
-              <li>Integrated various third-party APIs, including Facebook Graph API, and Slack, enhancing functionality and providing valuable insights.</li>
-              <li>Managed the project on GitHub, maintaining a clean and organized codebase for efficient collaboration and version control.</li>
-              <li>Project Link:
-                <ul>
-                  <li><a href="https://github.com/dthtien/deal-hub-backend" target="_blank">GitHub Repository: DealHub</a></li>
-                  <li><a href="https://www.beneficiumvilis.com/" target="_blank">https://www.beneficiumvilis.com/</a></li>
+        {
+          projects.map((project) => (
+            <div className="mt-3">
+              <Toggle
+                buttonComponent={
+                  <>
+                    <h3 className="font-bold text-left">{project.name}</h3>
+                    <p className="text-gray-600">{project.title}</p>
+                  </>
+                }
+              >
+                <div className="mt-2">
+                  {
+                    project.urls.github && (
+                      <a
+                        href={project.urls.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm text-gray-900"
+                      >
+                        GitHub
+                      </a>
+                    )
+                  }
+                  {project.urls.website && (
+                    <>
+                      <span className="mx-2 text-gray-500">|</span>
+                      <a
+                        href={project.urls.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm text-gray-900"
+                      >
+                        Website
+                      </a>
+                    </>
+                  )}
+                </div>
+
+                <ul className="list-disc list-inside text-gray-700 mt-2">
+                  {project.specs.map((spec) => (
+                    <li key={spec} className="text-sm">
+                      {spec}
+                    </li>
+                  ))}
                 </ul>
-              </li>
-            </ul>
-          </Toggle>
-        </div>
-        <div className="mt-3">
-          <Toggle
-            buttonComponent={
-              <>
-                <h3 className="font-bold text-left">Dwf</h3>
-                <p className="text-gray-600">A distributed workflow runner using Sidekiq and Redis</p>
-              </>
-            }
-          >
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Developed <strong>Dwf</strong>, a distributed workflow runner utilizing Sidekiq and Redis, enabling efficient background processing and storage of workflow state.</li>
-              <li>Implemented a comprehensive test suite using RSpec and SimpleCov to ensure thorough coverage of all possible scenarios, enhancing the reliability and stability of the application.</li>
-              <li>Integrated Continuous Integration with GitHub Actions, automating the build and testing process for seamless development and deployment.</li>
-              <li>Garnered significant recognition and popularity within the developer community, with numerous stars on GitHub and a high number of installations on RubyGem.</li>
-              <li>Published the RubyGem <code>wf</code>, providing developers with a powerful and user-friendly tool for managing and executing workflows.</li>
-              <li>Maintained clear and concise documentation, enabling easy adoption and understanding of the Dwf framework.</li>
-              <li>Ensured consistency in coding style and best practices, adhering to industry standards and guidelines.</li>
-              <li>Diligently proofread all code and documentation, eliminating errors and ensuring the highest quality and reliability of the application.</li>
-              <li>Project Links:
-                <ul>
-                  <li><a href="https://rubygems.org/gems/dwf" target="_blank">RubyGem: dwf</a></li>
-                  <li><a href="https://github.com/dthtien/wf" target="_blank">GitHub Repository: wf</a></li>
-                </ul>
-              </li>
-            </ul>
-          </Toggle>
-        </div>
-        <div className="mt-3">
-          <Toggle
-            buttonComponent={
-              <>
-                <h3 className="font-bold text-left">TopLands</h3>
-                <p className="text-gray-600">A real estate statistics application for Ho Chi Minh</p>
-              </>
-            }
-          >
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Developed a statistics application, <strong>TopLands</strong>, focused on Ho Chi Minh real estate prices, utilizing ReactJS, Redux, and Rails as the technology stack.</li>
-              <li>Implemented Capistrano to deploy the API to Azure VPS, ensuring smooth and efficient deployment processes.</li>
-              <li>Designed a user-friendly web-based UI inspired by Google Material Design, enhancing the overall user experience.</li>
-              <li>Deployed the front-end to Heroku, ensuring high availability and scalability of the application.</li>
-              <li>Utilized background processing with Sidekiq to scrape data daily, ensuring up-to-date and accurate information for users.</li>
-              <li>Implemented continuous integration with CircleCI, ensuring the stability and reliability of the application through automated testing and deployment.</li>
-              <li>Configured the backend with Nginx, Puma, and Let's Encrypt, optimizing performance and security.</li>
-              <li>Integrated various third-party APIs, including Facebook Graph API, Google Analytics, Skylight, and Slack, enhancing functionality and providing valuable insights.</li>
-              <li>Managed the project on GitHub, maintaining a clean and organized codebase for efficient collaboration and version control.</li>
-              <li>Project Link:
-                <ul>
-                  <li><a href="https://github.com/dthtien/real_estate_researcher" target="_blank">GitHub Repository: TopLands</a></li>
-                </ul>
-              </li>
-            </ul>
-          </Toggle>
-        </div>
+              </Toggle>
+            </div>
+          ))
+        }
       </section>
 
       {/* Education */}
