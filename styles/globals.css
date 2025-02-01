@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+  @media print {
+    @page {
+      size: A4;
+      margin: 1cm;
+    }
+
+    .print-area {
+      @apply w-full h-auto bg-white text-black p-4;
+    }
+
+    /* Hide unnecessary UI elements in print */
+    .print:hidden {
+      display: none;
+    }
+  }
+}
