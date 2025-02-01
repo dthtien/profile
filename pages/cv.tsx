@@ -1,8 +1,16 @@
 import React from "react";
 import Toggle from "../components/Toggle";
 import { projects } from "../components/Projects";
+import { useSearchParams } from "next/navigation";
 
 const CV = () => {
+  const searchParams = useSearchParams();
+  const print = searchParams.get("print");
+
+  React.useEffect(() => {
+    if (print) handlePrint();
+  }, [print]);
+
   const handlePrint = () => {
     window.print();
   };
