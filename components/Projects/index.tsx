@@ -1,15 +1,16 @@
 export const projects = [
   {
     name: "Deal Hub",
-    title: "The website displays bargain details from AU online stores, updated every hour.",
+    title: "The website displays bargain details from AU online stores, updated every hour and helps users compare car insurance prices among different providers in Australia.",
     urls: {
       github: "https://github.com/dthtien/deal-hub-backend",
       website: "https://www.beneficiumvilis.com/"
     },
     specs: [
-      "Developed an application, focused on AU online stores' deals, utilizing ReactJS, and Rails as the technology stack.",
-      "Implemented CI/CD to run tests and distribute the app to Vultr cloud.",
+      "Developed an application, focused on AU online stores' deals and car insurance prices, utilizing ReactJS, and Rails as the technology stack.",
+      "Implemented the crawler to scrape data from various online stores and car insurance providers, ensuring up-to-date and accurate information for users.",
       "Designed a user-friendly web-based UI inspired by Google Material Design, enhancing the overall user experience.",
+      "Implemented CI/CD to run tests and distribute the app to Vultr cloud.",
       "Deployed the front-end to Vercel, ensuring high availability and scalability of the application.",
       "Utilized background processing with Sidekiq to scrape data daily, ensuring up-to-date and accurate information for users.",
       "Implemented continuous integration with CircleCI, ensuring the stability and reliability of the application through automated testing and deployment.",
