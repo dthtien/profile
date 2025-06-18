@@ -14,7 +14,7 @@ const experiences = [
     name: "Employment Hero",
     title: "Fullstack devloper - Ruby and ReactJS",
     time: "April 2020 - May 2023",
-    imageSrc: "https://employmenthero.com/wp-content/uploads/2021/07/Full.svg",
+    imageSrc: "/images/logo-eh.png",
     imageAlt: "All-In-One HR, Payroll & Benefits Platform",
     href: "https://employmenthero.com/",
     address: "Ho Chi Minh City, Vietnam",
@@ -33,6 +33,7 @@ const experiences = [
     name: "Vinova",
     title: "Fullstack developer - Ruby on Rails",
     time: "Jun 2017 - Jan 2018",
+    imageSrc: "/images/vinova-logo.svg",
     imageAlt:
       "The trusted mobile application and software partner for enterprises, SMEs, and startups since 2010.",
     href: "https://vinova.sg/",
