@@ -2,6 +2,8 @@ import React from "react";
 import Toggle from "../components/Toggle";
 import { projects } from "../components/Projects";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
+import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/20/solid";
 
 const CV = () => {
   const searchParams = useSearchParams();
@@ -15,8 +17,8 @@ const CV = () => {
     window.print();
   };
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <div className="print:hidden text-right">
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg text-base">
+      <div className="print:hidden text-right mb-2">
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded-md print:hidden"
           onClick={handlePrint}
@@ -26,14 +28,52 @@ const CV = () => {
       </div>
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold">THE TIEN DAU</h1>
-        <p className="text-gray-600">Software Engineer</p>
-        <p className="text-gray-500">Sunshine West, VIC 3020</p>
-        <p className="text-gray-500">+61 499 380 358</p>
-        <div className="flex justify-center space-x-4 mt-2">
-          <a href="mailto:tiendt2311@gmail.com" className="text-blue-500">Email</a>
-          <a href="https://github.com/dthtien" className="text-blue-500">GitHub</a>
-          <a href="https://linkedin.com/in/dthtien" className="text-blue-500">LinkedIn</a>
+        <div className="flex justify-between">
+          <div className="text-left">
+            <h1 className="text-3xl font-bold">THE TIEN DAU</h1>
+            <p className="text-gray-600">Software Engineer</p>
+            <p className="text-gray-500">Melbourne, VIC</p>
+          </div>
+          <div>
+            <ul className="text-left">
+              <li className="flex gap-1">
+                <PhoneIcon width="20" height="20"/>
+                <a href="tel:+61499380358">+61499 380 358</a>
+              </li>
+              <li className="flex gap-1">
+                <AtSymbolIcon width="20" height="20"/>
+                <a href="mailto:tiendt2311@gmail.com">tiendt2311@gmail.com</a>
+              </li>
+              <li className="flex gap-1">
+                <Image
+                  src="/icons/github.svg"
+                  width={20}
+                  height={20}
+                  alt="github"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
+                <a href="https://github.com/dthtien" className="text-blue-500">
+                  https://github.com/dthtien
+                </a>
+              </li>
+              <li className="flex gap-1">
+                <Image
+                  src="/icons/linkedin.svg"
+                  width={20}
+                  height={20}
+                  alt="github"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
+                <a href="https://linkedin.com/in/dthtien" className="text-blue-500">
+                  https://linkedin.com/in/dthtien
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -41,9 +81,9 @@ const CV = () => {
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
         <p className="text-gray-700 mt-2">
-          I'm a full-stack developer passionate about building software that improves people's lives.
-          I'm looking for a chance to gain work experience as a Software Engineer, opportunities to develop my skills, take on exciting projects, and work with people I can learn.
-          Willing to work hard and excited to continue learning new skills to become a successful developer.
+          Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and React.
+          Proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
+          Passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
         </p>
       </section>
 
@@ -51,7 +91,7 @@ const CV = () => {
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Technical Skills</h2>
         <ul className="list-disc list-inside text-gray-700 mt-2">
-          <li><strong>Languages:</strong> Ruby (5+ years), JavaScript (3+ years)</li>
+          <li><strong>Languages:</strong> Ruby (6+ years), JavaScript (3+ years)</li>
           <li><strong>Frameworks:</strong> Ruby on Rails, ReactJS, Redux</li>
           <li><strong>Cloud:</strong> AWS, Heroku</li>
           <li><strong>Databases:</strong> PostgreSQL</li>
