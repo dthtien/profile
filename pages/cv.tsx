@@ -34,7 +34,7 @@ const CV = () => {
             <p className="text-gray-500">Melbourne, VIC</p>
           </div>
           <div>
-            <ul className="text-left">
+            <ul className="text-left print:text-sm">
               <li className="flex gap-1">
                 <PhoneIcon width="20" height="20"/>
                 <a href="tel:+61499380358">+61499 380 358</a>
