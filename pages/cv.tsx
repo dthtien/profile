@@ -1,5 +1,4 @@
 import React from "react";
-import Toggle from "../components/Toggle";
 import { projects } from "../components/Projects";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -17,7 +16,7 @@ const CV = () => {
     window.print();
   };
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg text-base">
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg text-base print:shadow-none">
       <div className="print:hidden text-right mb-2">
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded-md print:hidden"
@@ -78,19 +77,19 @@ const CV = () => {
       </div>
 
       {/* Summary */}
-      <section className="mt-6">
+      <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
-        <p className="text-gray-700 mt-2">
-          Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and React.
-          Proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
-          Passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
+        <p className="text-gray-700 mt-2 print:text-xs">
+          I'm a Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and 2+ years of React development.
+          I have a proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
+          I'm passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
         </p>
       </section>
 
       {/* Technical Skills */}
-      <section className="mt-6">
+      <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Technical Skills</h2>
-        <ul className="list-disc list-inside text-gray-700 mt-2">
+        <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
           <li><strong>Languages:</strong> Ruby (6+ years), JavaScript (3+ years)</li>
           <li><strong>Frameworks:</strong> Ruby on Rails, ReactJS, Redux</li>
           <li><strong>Cloud:</strong> AWS, Heroku</li>
@@ -108,7 +107,7 @@ const CV = () => {
             Global Health - Melbourne
           </a>
           <p className="text-gray-600 mt-1">Full-stack Developer (May 2023 - Present)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2">
+          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
             <li>Implemented CI/CD and Testing procedures by creating an optimized GIT flow, setting up Bitbucket pipelines, and developing a unit test suite with over 80% code coverage</li>
             <li>Implemented the Hot Health application - the all-in-one patient engagement platform using <strong>Rails</strong>, <strong>Vue</strong>, <strong>Postgresql</strong> and <strong>Rspec</strong></li>
             <li>Work with other teams to implement queries for research purposes</li>
@@ -126,7 +125,7 @@ const CV = () => {
             Employment Hero - Ho Chi Minh
           </a>
           <p className="text-gray-600 mt-1">Full-stack Developer (April 2020 - May 2023)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2">
+          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
             <li>Implemented security group setting features within management modules using Rails, Postgresql, Rspec, ReactJS, and Typescript</li>
             <li>Managed official employment documents within a document management system utilizing Rails, Postgresql, Rspec, ReactJS, Typescript, and React Native</li>
             <li>Integrated a learning management system with third-party Go1, utilizing stacks including Sinatra, Postgresql, Rspec, and ReactJS</li>
@@ -143,7 +142,7 @@ const CV = () => {
             Cyber Logistics (Pty) Ltd - Ho Chi Minh
           </a>
           <p className="text-gray-600 mt-1">Full-stack Developer (Sept 2018 - Feb 2020)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2">
+          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
             <li>Awarded the best growth of the year prize since 2018</li>
             <li>Optimized full-text search with Elasticsearch</li>
             <li>Built and maintained test suites from scratch</li>
@@ -157,68 +156,81 @@ const CV = () => {
       </section>
 
       {/* Personal Projects */}
-      <section className="mt-6">
+      <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Personal Projects</h2>
         {
           projects.map((project) => (
             <div className="mt-3" key={project.name}>
-              <Toggle
-                buttonComponent={
-                  <>
-                    <h3 className="font-bold text-left">{project.name}</h3>
-                    <p className="text-gray-600">{project.title}</p>
-                  </>
+              <div className="grid">
+                <h3 className="font-bold text-left">{project.name}</h3>
+                <p className="text-gray-600 text-left print:text-xs">{project.title}</p>
+              </div>
+              <div className="mt-2">
+                {
+                  project.urls.github && (
+                    <a
+                      href={project.urls.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="print:text-xs text-gray-900"
+                    >
+                      GitHub
+                    </a>
+                  )
                 }
-              >
-                <div className="mt-2">
-                  {
-                    project.urls.github && (
-                      <a
-                        href={project.urls.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm text-gray-900"
-                      >
-                        GitHub
-                      </a>
-                    )
-                  }
-                  {project.urls.website && (
-                    <>
-                      <span className="mx-2 text-gray-500">|</span>
-                      <a
-                        href={project.urls.website}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm text-gray-900"
-                      >
-                        Website
-                      </a>
-                    </>
-                  )}
-                </div>
+                {project.urls.website && (
+                  <>
+                    <span className="mx-2 text-gray-500">|</span>
+                    <a
+                      href={project.urls.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="print:text-xs text-gray-900"
+                    >
+                      Website
+                    </a>
+                  </>
+                )}
+              </div>
 
-                <ul className="list-disc list-inside text-gray-700 mt-2">
-                  {project.specs.map((spec) => (
-                    <li key={spec} className="text-sm">
-                      {spec}
-                    </li>
-                  ))}
-                </ul>
-              </Toggle>
+              <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
+                {project.specs.map((spec) => (
+                  <li key={spec}>
+                    {spec}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))
         }
       </section>
 
       {/* Education */}
-      <section className="mt-6">
+      <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Education</h2>
-        <p className="text-gray-700 mt-2">
+        <p className="text-gray-700 mt-2 print:text-sm">
           <strong>Viet Nam National University HCMC - University Of Information Technology</strong>
           <br /> Bachelor of Engineering (Software) (2014 - 2019)
         </p>
-        <p className="mt-2">Major: <strong>Information System</strong> </p>
+        <p className="mt-2 print:text-sm">Major: <strong>Information System</strong> </p>
+      </section>
+
+      { /* References*/ }
+      <section className="mt-5">
+        <h2 className="text-xl font-semibold border-b pb-1">References</h2>
+        <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
+          <li>
+            <strong>Loc Nguyen</strong> - Global Health, Senior Software Engineer
+            <br />
+            <a href="mailto:loc.nguyen@global-health.com">loc.nguyen@global-health.com</a>
+          </li>
+
+          <li>
+            <strong>Phat Le</strong> - Employment Hero, Engineering Manager
+            <br />
+            <a href="mailto: phat.tan@employmenthero.com">phat.tan@employmenthero.com</a>
+          </li>
+        </ul>
       </section>
     </div>
   );
