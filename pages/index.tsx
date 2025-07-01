@@ -25,9 +25,10 @@ const Home: NextPage = () => {
           </span>
         </h1>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and React.
-          Proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
-          Passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
+          I'm a Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and 2+ years of React development.
+          I have a proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
+          I'm passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
+
         </p>
       </div>
       <Contacts setShowToast={setShowToast} />
