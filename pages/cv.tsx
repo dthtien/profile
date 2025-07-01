@@ -174,7 +174,10 @@ const CV = () => {
                       rel="noreferrer"
                       className="print:text-xs text-gray-900"
                     >
-                      GitHub
+                      GitHub:
+                      <strong className="ml-1 text-xs">
+                        {project.urls.github}
+                      </strong>
                     </a>
                   )
                 }
@@ -187,7 +190,10 @@ const CV = () => {
                       rel="noreferrer"
                       className="print:text-xs text-gray-900"
                     >
-                      Website
+                      Website:
+                      <strong className="ml-1 text-xs">
+                        {project.urls.website}
+                      </strong>
                     </a>
                   </>
                 )}
