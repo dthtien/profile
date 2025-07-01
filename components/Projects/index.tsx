@@ -4,7 +4,7 @@ export const projects = [
     title: "The website displays bargain details from AU online stores, updated every hour and helps users compare car insurance prices among different providers in Australia.",
     urls: {
       github: "https://github.com/dthtien/deal-hub-backend",
-      website: "https://www.beneficiumvilis.com/"
+      website: "https://www.ozvfy.com/"
     },
     specs: [
       "Developed a ReactJS and Rails application for AU online stores' deals and car insurance price comparison.",
