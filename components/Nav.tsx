@@ -5,7 +5,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid'
 const navigation = [
   { name: 'Profile', href: '/' },
   { name: 'CV', href: '/cv' },
-  { name: 'Todo', href: '/todo' },
+  { name: 'Cover Letter', href: '/cl' },
+  { name: 'Portfolio', href: '/projects' },
 ]
 
 const Nav: FC = () => (

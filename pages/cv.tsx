@@ -81,8 +81,8 @@ const CV = () => {
         <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
         <p className="text-gray-700 mt-2 print:text-xs">
           I'm a Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and 2+ years of React development.
-          I have a proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
-          I'm passionate about clean, test-driven code, solving challenging problems, and contributing to open-source projects.
+          Proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
+          Passionate about clean, test-driven code, system architecture, and solving real-world challenges.
         </p>
       </section>
 

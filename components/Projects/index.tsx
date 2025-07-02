@@ -9,6 +9,8 @@ export const projects = [
     specs: [
       "Developed a ReactJS and Rails application for AU online stores' deals and car insurance price comparison.",
       "Built web crawlers to scrape data from various stores and insurance providers with daily updates via Sidekiq.",
+      "Enabled users to compare car insurance rates from various providers in Australia.",
+      "Implemented a feature for users to retrieve car information by entering the car number plate.",
       "Designed Material Design-inspired UI and deployed frontend to Vercel with CI/CD pipeline.",
       "Configured backend with Nginx, Puma, and Let's Encrypt, integrated Facebook Graph API and Slack."
     ]
