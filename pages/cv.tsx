@@ -1,8 +1,8 @@
 import React from "react";
-import { projects } from "../components/Projects";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/20/solid";
+import { projects, summaryText, technicalSkills, workExperiences } from "../components/shared/details";
 
 const CV = () => {
   const searchParams = useSearchParams();
@@ -80,9 +80,7 @@ const CV = () => {
       <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
         <p className="text-gray-700 mt-2 print:text-xs">
-          I'm a Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and 2+ years of React development.
-          Proven track record of building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
-          Passionate about clean, test-driven code, system architecture, and solving real-world challenges.
+          { summaryText }
         </p>
       </section>
 
@@ -90,69 +88,37 @@ const CV = () => {
       <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Technical Skills</h2>
         <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-          <li><strong>Languages:</strong> Ruby (6+ years), JavaScript (3+ years)</li>
-          <li><strong>Frameworks:</strong> Ruby on Rails, ReactJS, Redux</li>
-          <li><strong>Cloud:</strong> AWS, Heroku</li>
-          <li><strong>Databases:</strong> PostgreSQL</li>
-          <li><strong>Tools:</strong> Vim, Git, Docker, Terraform</li>
-          <li><strong>Paradigms:</strong> OOP, MVC, TDD</li>
+          {
+            technicalSkills.map((skill) => (
+              <li key={skill.category}>
+                <strong>{skill.category}:</strong> {skill.skills.join(", ")}
+              </li>
+            ))
+          }
         </ul>
       </section>
 
       {/* Work Experience */}
       <section className="mt-6">
         <h2 className="text-xl font-semibold border-b pb-1">Work Experience</h2>
-        <div className="mt-3 border-b pb-2">
-          <a className="font-bold mb-1" href="https://www.global-health.com/" target="_blank">
-            Global Health - Melbourne
-          </a>
-          <p className="text-gray-600 mt-1">Full-stack Developer (May 2023 - Present)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-            <li>Implemented CI/CD and Testing procedures by creating an optimized GIT flow, setting up Bitbucket pipelines, and developing a unit test suite with over 80% code coverage</li>
-            <li>Implemented the Hot Health application - the all-in-one patient engagement platform using <strong>Rails</strong>, <strong>Vue</strong>, <strong>Postgresql</strong> and <strong>Rspec</strong></li>
-            <li>Work with other teams to implement queries for research purposes</li>
-            <li>Mentored new team members to enhance team knowledge and efficiency</li>
-            <li>Conducted code maintenance and refactoring to optimize system performance</li>
-            <li>Supported integration team with new techniques to meet project deadlines.</li>
-            <li>Led the Rails Upgrade project, ensuring a seamless upgrade of Ruby on Rails versions</li>
-            <li>Collaborated with third-party providers to effectively manage integration and data synchronization</li>
-            <li>Developed, estimated, and delivered software modules on schedule in alignment with strategic objectives</li>
-            <li>Provided essential customer support, including building reports, identifying the issue during the integration process</li>
-          </ul>
-        </div>
-        <div className="mt-3 border-b pb-2">
-          <a href="https://employmenthero.com/" target="_blank" className="font-bold mb-1">
-            Employment Hero - Ho Chi Minh
-          </a>
-          <p className="text-gray-600 mt-1">Full-stack Developer (April 2020 - May 2023)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-            <li>Implemented security group setting features within management modules using Rails, Postgresql, Rspec, ReactJS, and Typescript</li>
-            <li>Managed official employment documents within a document management system utilizing Rails, Postgresql, Rspec, ReactJS, Typescript, and React Native</li>
-            <li>Integrated a learning management system with third-party Go1, utilizing stacks including Sinatra, Postgresql, Rspec, and ReactJS</li>
-            <li>Collaborated directly with third-party providers to ensure seamless integration and data synchronization</li>
-            <li>Constructed monitoring pages to identify and resolve unexpected issues with integration processes</li>
-            <li>Developed a complex service for creating and updating management features</li>
-            <li>Provided mentorship to new team members and assisted the mobile team with implementing new design concepts across various modules</li>
-            <li>Designed and implemented a migration flow for transferring legacy data to new data structures without errors</li>
-          </ul>
-        </div>
+        {
+          workExperiences.map((experience) => (
+            <div className="mt-3 border-b pb-2" key={experience.company}>
+              <a className="font-bold mb-1" href={experience.url} target="_blank">
+                {experience.company}
+              </a>
 
-        <div className="mt-3 border-b pb-2">
-          <a className="font-bold mb-1" href="http://www.scs71.com" target="_blank">
-            Cyber Logistics (Pty) Ltd - Ho Chi Minh
-          </a>
-          <p className="text-gray-600 mt-1">Full-stack Developer (Sept 2018 - Feb 2020)</p>
-          <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-            <li>Awarded the best growth of the year prize since 2018</li>
-            <li>Optimized full-text search with Elasticsearch</li>
-            <li>Built and maintained test suites from scratch</li>
-            <li>Applied ReactJS and Redux to the Frontend repository</li>
-            <li>Implemented SNIPE, a pricing support system using Rails and Postgresql</li>
-            <li>Implemented ONE-chatbot to support the BACS project with NodeJS, Dialogflow, and Google Cloud Function</li>
-            <li>Worked independently and efficiently in a team to develop a website from scratch to completion using Rails and React</li>
-            <li>Developed BACS, a containers and vessels checking system using Rails, ReactJS, Elasticsearch, and Postgresql</li>
-          </ul>
-        </div>
+              <p className="text-gray-600 mt-1">{experience.position} ({experience.duration})</p>
+              <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
+                {
+                  experience.activities.map((activity, index) => (
+                    <li key={index}>{activity}</li>
+                  ))
+                }
+              </ul>
+            </div>
+          ))
+        }
       </section>
 
       {/* Personal Projects */}
