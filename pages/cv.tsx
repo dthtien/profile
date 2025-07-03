@@ -180,10 +180,10 @@ const CV = () => {
       {/* Education */}
       <section className="mt-5">
         <h2 className="text-xl font-semibold border-b pb-1">Education</h2>
-        <p className="text-gray-700 mt-2 print:text-sm">
-          <strong>Viet Nam National University HCMC - University Of Information Technology</strong>
-          <br /> Bachelor of Engineering (Software) (2014 - 2019)
-        </p>
+        <div className="text-gray-700 mt-2">
+          <p className="font-bold print:text-sm">Bachelor of Engineering (Software) (2014 - 2019)</p>
+          <p className="text-sm print:text-xs">Viet Nam National University HCMC - University Of Information Technology</p>
+        </div>
         <p className="mt-2 print:text-sm">Major: <strong>Information System</strong> </p>
       </section>
 
