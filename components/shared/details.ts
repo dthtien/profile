@@ -8,7 +8,7 @@ export const projects = [
     },
     specs: [
       "Built with ReactJS and Rails for deal aggregation and car insurance comparison.",
-      "Implemented daily data scraping using Sidekiq and custom web crawlers",
+      "Implemented daily data scraping using Sidekiq and custom web crawlers.",
       "Designed Material Design-inspired UI and deployed frontend to Vercel.",
       "Enabled car detail lookup via number plate input.",
       "Configured CI/CD with GitHub Actions, Docker, Nginx, Puma.",
@@ -25,7 +25,7 @@ export const projects = [
     specs: [
       "Developed a distributed workflow runner using Sidekiq and Redis for efficient background processing.",
       "Implemented comprehensive test suite with RSpec and CI/CD pipeline using GitHub Actions.",
-      "Published as RubyGem 'wf' with clear documentation, gaining significant community adoption."
+      "Published as the RubyGem 'dwf' with clear documentation, gaining significant community adoption."
     ]
   },
   {
@@ -34,8 +34,7 @@ export const projects = [
     urls: {
       github: "https://github.com/dthtien/real_estate_researcher"
     },
-    specs:
-    [
+    specs: [
       "Built a ReactJS/Redux/Rails real estate statistics app for Ho Chi Minh City.",
       "Deployed API to Azure VPS using Capistrano and frontend to Heroku.",
       "Implemented Material Design UI with daily data scraping via Sidekiq.",
@@ -115,12 +114,12 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://www.global-health.com/",
     duration: "May 2023 – Present",
-    description: "Worked as Full-Stack Developer on the HotHealth application — a Digital Front Door and Patient Portal for healthcare organisations. Led the development of high-impact features by translating complex requirements into scalable solutions, optimised for high traffic and performance. Worked closely with cross-functional teams to build robust modules, integrate third-party systems, and manage complex business logic to support diverse healthcare workflows.",
+    description: "Working as Full-Stack Developer on the HotHealth application — a Digital Front Door and Patient Portal for healthcare organisations. Led the development of high-impact features by translating complex requirements into scalable solutions, optimised for high traffic and performance. Worked closely with cross-functional teams to build robust modules, integrate third-party systems, and manage complex business logic to support diverse healthcare workflows.",
     archivements: [
       "Optimised application performance, significantly reducing average response times.",
       "Successfully led the upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance gains.",
-      "Successfully delivered the Hot Health application with over 80% test coverage previously under 20%.",
-      "Streamlined CI/CD processes, reducing huge amount of deploymen time.",
+      "Successfully delivered the HotHealth application with over 80% test coverage, previously under 20%.",
+      "Streamlined CI/CD processes, reducing a significant amount of deployment time.",
       "Led cross-functional collaboration to implement the pre-admission form submission feature across integrated platforms.",
       "Enhanced team onboarding and productivity through mentorship and effective knowledge sharing."
     ],
@@ -130,7 +129,7 @@ export const workExperiences = [
       "Minitest",
       "Docker",
       "Bitbucket Pipelines",
-      "AWS(S3, EC2, RDS)",
+      "AWS (S3, EC2, RDS)",
     ]
   },
   {
@@ -138,12 +137,12 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
-    description: "Worked as a Full-Stack Developer on the Employment Hero platform, a comprehensive HR and payroll management system to build and maintain various modules such as security groups, document management, and learning management systems for huge amount of traffice and usage.",
+    description: "Worked as a Full-Stack Developer on the Employment Hero platform, a comprehensive HR and payroll management system. Built and maintained various modules such as security groups, document management, and learning management systems to support high traffic and usage.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
       "Improved system performance by optimising database queries and introducing effective caching and indexing strategies.",
       "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
-      "Contributed to the development of a mobile application, significantly improving the user experience and delivering the large-scale project on schedule.",
+      "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
       "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."
     ],
     techStack: [
@@ -168,7 +167,7 @@ export const workExperiences = [
       "Independently developed a full-featured website from concept to deployment, demonstrating strong full-stack development capabilities.",
       "Optimised search functionality using Elasticsearch, resulting in significantly faster queries and enhanced user experience.",
       "Built test suites from the ground up to improve code coverage and QA processes, ensuring consistent, high-quality software delivery.",
-      "Consolidated multiple duplicated pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead.",
+      "Consolidated multiple duplicated pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead."
     ],
     techStack: [
       "Ruby on Rails",
