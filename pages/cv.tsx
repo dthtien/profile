@@ -4,6 +4,17 @@ import Image from "next/image";
 import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { projects, summaryText, technicalSkills, workExperiences } from "../components/shared/details";
 
+type SectionProps = {
+  title: string;
+  children: React.ReactNode;
+};
+const Section = ({ title, children }: SectionProps) => (
+  <section className="mt-5 print:mt-3">
+    <h2 className="text-xl print:text-lg font-semibold border-b pb-1 print:pb-0">{title}</h2>
+    {children}
+  </section>
+);
+
 const CV = () => {
   const searchParams = useSearchParams();
   const print = searchParams.get("print");
@@ -77,16 +88,14 @@ const CV = () => {
       </div>
 
       {/* Summary */}
-      <section className="mt-5">
-        <h2 className="text-xl font-semibold border-b pb-1">Summary</h2>
+      <Section title="Summary">
         <p className="text-gray-700 mt-2 print:text-xs">
           { summaryText }
         </p>
-      </section>
+      </Section>
 
       {/* Technical Skills */}
-      <section className="mt-5">
-        <h2 className="text-xl font-semibold border-b pb-1">Technical Skills</h2>
+      <Section title="Technical Skills">
         <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
           {
             technicalSkills.map((skill) => (
@@ -96,39 +105,50 @@ const CV = () => {
             ))
           }
         </ul>
-      </section>
-
+      </Section>
       {/* Work Experience */}
-      <section className="mt-6">
-        <h2 className="text-xl font-semibold border-b pb-1">Work Experience</h2>
+      <Section title="Work Experience">
         {
           workExperiences.map((experience) => (
             <div className="mt-3 border-b pb-2" key={experience.company}>
-              <a className="font-bold mb-1" href={experience.url} target="_blank">
+              <p className="text-gray-600 mt-1 font-bold print:text-sm">{experience.position} ({experience.duration})</p>
+              <a className="mb-1 print:text-sm" href={experience.url} target="_blank">
                 {experience.company}
               </a>
 
-              <p className="text-gray-600 mt-1">{experience.position} ({experience.duration})</p>
-              <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
+              <p className="text-gray-500 mt-1 text-sm print:text-xs">{experience.description}</p>
+              <p className="text-gray-500 mt-1 print:text-xs">
+                <strong>Archivements:</strong>
+              </p>
+              <ul className="list-disc list-inside text-gray-700 print:text-xs">
                 {
-                  experience.activities.map((activity, index) => (
+                  experience.archivements.map((activity, index) => (
                     <li key={index}>{activity}</li>
                   ))
                 }
               </ul>
+              <p className="text-gray-500 mt-1 print:text-xs">
+                Tech Stack: { " " }
+                {
+                  experience?.techStack?.map((tech, index) => (
+                    <strong key={index} className="text-gray-700 text-sm print:text-xs">
+                      {tech}{index < experience.techStack.length - 1 ? ', ' : ''}
+                    </strong>
+                  ))
+                }
+              </p>
             </div>
           ))
         }
-      </section>
+      </Section>
 
       {/* Personal Projects */}
-      <section className="mt-5">
-        <h2 className="text-xl font-semibold border-b pb-1">Personal Projects</h2>
+      <Section title="Personal Projects">
         {
           projects.map((project) => (
             <div className="mt-3" key={project.name}>
               <div className="grid">
-                <h3 className="font-bold text-left">{project.name}</h3>
+                <h3 className="font-bold text-left print:text-sm">{project.name}</h3>
                 <p className="text-gray-600 text-left print:text-xs">{project.title}</p>
               </div>
               <div className="mt-2">
@@ -175,35 +195,16 @@ const CV = () => {
             </div>
           ))
         }
-      </section>
+      </Section>
 
       {/* Education */}
-      <section className="mt-5">
-        <h2 className="text-xl font-semibold border-b pb-1">Education</h2>
+      <Section title="Education">
         <div className="text-gray-700 mt-2">
           <p className="font-bold print:text-sm">Bachelor of Engineering (Software) (2014 - 2019)</p>
           <p className="text-sm print:text-xs">Viet Nam National University HCMC - University Of Information Technology</p>
         </div>
         <p className="mt-2 print:text-sm">Major: <strong>Information System</strong> </p>
-      </section>
-
-      { /* References*/ }
-      <section className="mt-5">
-        <h2 className="text-xl font-semibold border-b pb-1">References</h2>
-        <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-          <li>
-            <strong>Loc Nguyen</strong> - Global Health, Senior Software Engineer
-            <br />
-            <a href="mailto:loc.nguyen@global-health.com">loc.nguyen@global-health.com</a>
-          </li>
-
-          <li>
-            <strong>Phat Le</strong> - Employment Hero, Engineering Manager
-            <br />
-            <a href="mailto: phat.tan@employmenthero.com">phat.tan@employmenthero.com</a>
-          </li>
-        </ul>
-      </section>
+      </Section>
     </div>
   );
 };

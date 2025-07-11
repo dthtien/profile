@@ -55,15 +55,15 @@ export const technicalSkills = [
   {
     category: "Languages",
     skills: [
-      "Ruby (6+ years)",
-      "JavaScript (2+ years)",
+      "Ruby",
+      "JavaScript",
     ]
   },
   {
-    category: "Frameworks",
+    category: "Frameworks/Libraries",
     skills: [
-      "Ruby on Rails (6+ years)",
-      "ReactJS (2+ years)",
+      "Ruby on Rails",
+      "ReactJS",
       "Sidekiq"
     ]
   },
@@ -74,12 +74,12 @@ export const technicalSkills = [
     ]
   },
   {
-    category: "DevOps & Deployment",
+    category: "DevOps and Tools",
     skills: [
       "Docker",
-      "Nginx",
       "Puma",
       "Capistrano",
+      "Kamal",
       "GitHub Actions",
       "Terraform",
       "Linux",
@@ -104,7 +104,7 @@ export const technicalSkills = [
     category: "Other Tools",
     skills: [
       "Git",
-      "Vim"
+      "NeoVim"
     ]
   }
 ]
@@ -115,16 +115,22 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://www.global-health.com/",
     duration: "May 2023 – Present",
-    activities: [
-      "Implemented CI/CD and testing procedures by creating an optimised Git workflow, setting up Bitbucket pipelines, and developing a unit test suite achieving over 80% coverage.",
-      "Delivered the Hot Health application – an all-in-one patient engagement platform using Rails, Vue, PostgreSQL, and RSpec.",
-      "Managed the Rails upgrade process from version 4 to 7, delivering a seamless transition with no major regressions.",
-      "Collaborated with cross-functional teams to implement complex queries for research and reporting.",
-      "Mentored new team members, improving team knowledge and onboarding efficiency.",
-      "Conducted code maintenance and refactoring to optimise performance and scalability.",
-      "Liaised with third-party providers to manage integrations and synchronisation.",
-      "Delivered well-estimated software modules on time, aligned with business objectives.",
-      "rovided client support including report generation and integration issue resolution."
+    description: "Worked as Full-Stack Developer on the HotHealth application — a Digital Front Door and Patient Portal for healthcare organisations. Led the development of high-impact features by translating complex requirements into scalable solutions, optimised for high traffic and performance. Worked closely with cross-functional teams to build robust modules, integrate third-party systems, and manage complex business logic to support diverse healthcare workflows.",
+    archivements: [
+      "Optimised application performance, significantly reducing average response times.",
+      "Successfully led the upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance gains.",
+      "Successfully delivered the Hot Health application with over 80% test coverage previously under 20%.",
+      "Streamlined CI/CD processes, reducing huge amount of deploymen time.",
+      "Led cross-functional collaboration to implement the pre-admission form submission feature across integrated platforms.",
+      "Enhanced team onboarding and productivity through mentorship and effective knowledge sharing."
+    ],
+    techStack: [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Minitest",
+      "Docker",
+      "Bitbucket Pipelines",
+      "AWS(S3, EC2, RDS)",
     ]
   },
   {
@@ -132,14 +138,22 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
-    activities: [
-      "Developed and maintained security group settings within management modules using Rails, PostgreSQL, RSpec, ReactJS, and TypeScript.",
-      "Built document management systems to handle official employment records.",
-      "Integrated a third-party Learning Management System (Go1) using Sinatra, ReactJS, and PostgreSQL.",
-      "Designed monitoring tools to proactively detect and resolve integration issues.",
-      "Created services for complex management feature flows and legacy data migration.",
-      "Provided technical mentorship to junior developers and supported mobile design integration.",
-      "Contributed to the design and implementation of a seamless legacy data migration flow."
+    description: "Worked as a Full-Stack Developer on the Employment Hero platform, a comprehensive HR and payroll management system to build and maintain various modules such as security groups, document management, and learning management systems for huge amount of traffice and usage.",
+    archivements: [
+      "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
+      "Improved system performance by optimising database queries and introducing effective caching and indexing strategies.",
+      "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
+      "Contributed to the development of a mobile application, significantly improving the user experience and delivering the large-scale project on schedule.",
+      "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."
+    ],
+    techStack: [
+      "Ruby on Rails",
+      "ReactJS",
+      "PostgreSQL",
+      "Redis",
+      "Sidekiq",
+      "RSpec",
+      "Docker",
     ]
   },
   {
@@ -147,15 +161,21 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://www.cyberlogitec.com",
     duration: "Sept 2018 – Feb 2020",
-    activities: [
-      "Received 'Best Growth of the Year' award in 2018.",
-      "Implemented full-text search optimisations using Elasticsearch.",
-      "Built test suites from scratch to improve code coverage and QA processes.",
-      "Applied ReactJS and Redux to enhance the frontend user experience.",
-      "Developed SNIPE – a pricing support tool built with Rails and PostgreSQL.",
-      "Built ONE-chatbot using Node.js, Dialogflow, and Google Cloud Functions for customer support.",
-      "Delivered the BACS system – a containers and vessels management tool using Rails, React, Elasticsearch, and PostgreSQL.",
-      "Independently developed a website from concept to completion using Rails and React."
+    description: "Worked as a Full-Stack Developer on the BACS system, a tool for managing containers and vessels, and SNIPE, a pricing support tool designed to handle user requests related to logistics calculations and checks.",
+    archivements: [
+      "Awarded Best Growth of the Year for outstanding performance and contributions to the team.",
+      "Delivered the BACS system — a comprehensive container and vessel management tool — improving operational efficiency.",
+      "Independently developed a full-featured website from concept to deployment, demonstrating strong full-stack development capabilities.",
+      "Optimised search functionality using Elasticsearch, resulting in significantly faster queries and enhanced user experience.",
+      "Built test suites from the ground up to improve code coverage and QA processes, ensuring consistent, high-quality software delivery.",
+      "Consolidated multiple duplicated pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead.",
+    ],
+    techStack: [
+      "Ruby on Rails",
+      "ReactJS",
+      "PostgreSQL",
+      "Elasticsearch",
+      "RSpec"
     ]
   }
 ]
