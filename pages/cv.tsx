@@ -116,8 +116,8 @@ const CV = () => {
                 {experience.company}
               </a>
 
-              <p className="text-gray-500 mt-1 text-sm print:text-xs">{experience.description}</p>
-              <p className="text-gray-500 mt-1 print:text-xs">
+              <p className="text-gray-600 mt-1 print:text-xs">{experience.description}</p>
+              <p className="text-gray-600 mt-1 print:text-xs">
                 <strong>Archivements:</strong>
               </p>
               <ul className="list-disc list-inside text-gray-700 print:text-xs">
@@ -127,11 +127,11 @@ const CV = () => {
                   ))
                 }
               </ul>
-              <p className="text-gray-500 mt-1 print:text-xs">
+              <p className="text-gray-600 mt-1 print:text-xs">
                 Tech Stack: { " " }
                 {
                   experience?.techStack?.map((tech, index) => (
-                    <strong key={index} className="text-gray-700 text-sm print:text-xs">
+                    <strong key={index} className="text-gray-600 text-sm print:text-xs">
                       {tech}{index < experience.techStack.length - 1 ? ', ' : ''}
                     </strong>
                   ))
@@ -169,7 +169,7 @@ const CV = () => {
                 }
                 {project.urls.website && (
                   <>
-                    <span className="mx-2 text-gray-500">|</span>
+                    <span className="mx-2 text-gray-600">|</span>
                     <a
                       href={project.urls.website}
                       target="_blank"
