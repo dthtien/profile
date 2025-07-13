@@ -98,30 +98,24 @@ export const technicalSkills = [
       "Minitest",
       "Jest",
     ]
-  },
-  {
-    category: "Other Tools",
-    skills: [
-      "Git",
-      "NeoVim"
-    ]
   }
 ]
 
 export const workExperiences = [
   {
     company: "Global Health – Melbourne, VIC",
-    position: "Full-Stack Developer",
+    position: "Senior Full-Stack Developer",
     url: "https://www.global-health.com/",
     duration: "May 2023 – Present",
     description: "Working as Full-Stack Developer on the HotHealth application — a Digital Front Door and Patient Portal for healthcare organisations. Led the development of high-impact features by translating complex requirements into scalable solutions, optimised for high traffic and performance. Worked closely with cross-functional teams to build robust modules, integrate third-party systems, and manage complex business logic to support diverse healthcare workflows.",
     archivements: [
-      "Optimised application performance, significantly reducing average response times.",
-      "Successfully led the upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance gains.",
-      "Successfully delivered the HotHealth application with over 80% test coverage, previously under 20%.",
-      "Streamlined CI/CD processes, reducing a significant amount of deployment time.",
+      "Optimised application performance, significantly reducing average response time by 40%(5s to under 3s) through code refactoring and database query optimisation.",
+      "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within just 3.5 months.",
+      "Increased test coverage of the HotHealth application from under 20% to over 80%, significantly improving code reliability and maintainability.",
+      "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
+      "Streamlined CI/CD pipelines, reducing deployment time from 10 minutes to under 7 minutes.",
       "Led cross-functional collaboration to implement the pre-admission form submission feature across integrated platforms.",
-      "Enhanced team onboarding and productivity through mentorship and effective knowledge sharing."
+      "Mentored junior developers, improving onboarding efficiency and fostering a culture of collaboration and knowledge sharing."
     ],
     techStack: [
       "Ruby on Rails",
@@ -134,13 +128,13 @@ export const workExperiences = [
   },
   {
     company: "Employment Hero – Ho Chi Minh City, Vietnam",
-    position: "Full-Stack Developer",
+    position: "Intermediate Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
     description: "Worked as a Full-Stack Developer on the Employment Hero platform, a comprehensive HR and payroll management system. Built and maintained various modules such as security groups, document management, and learning management systems to support high traffic and usage.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
-      "Improved system performance by optimising database queries and introducing effective caching and indexing strategies.",
+      "Improved system performance by optimising database queries reduce haft of querying time from 6 to 2.9s and introducing effective caching and indexing strategies.",
       "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
       "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
       "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."

@@ -2,7 +2,7 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/20/solid";
-import { projects, summaryText, technicalSkills, workExperiences } from "../components/shared/details";
+import { projects, technicalSkills, workExperiences } from "../components/shared/details";
 
 type SectionProps = {
   title: string;
@@ -40,7 +40,7 @@ const CV = () => {
       <div className="text-center">
         <div className="flex justify-between">
           <div className="text-left">
-            <h1 className="text-3xl font-bold">THE TIEN DAU</h1>
+            <h1 className="text-3xl font-bold">TIEN DAU</h1>
             <p className="text-gray-600">Software Engineer</p>
             <p className="text-gray-500">Melbourne, VIC</p>
           </div>
@@ -87,13 +87,6 @@ const CV = () => {
         </div>
       </div>
 
-      {/* Summary */}
-      <Section title="Summary">
-        <p className="text-gray-700 mt-2 print:text-xs">
-          { summaryText }
-        </p>
-      </Section>
-
       {/* Technical Skills */}
       <Section title="Technical Skills">
         <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
@@ -110,7 +103,7 @@ const CV = () => {
       <Section title="Work Experience">
         {
           workExperiences.map((experience) => (
-            <div className="mt-3 border-b pb-2" key={experience.company}>
+            <div className="mt-3 border-b pb-2 print:break-inside-avoid" key={experience.company}>
               <p className="text-gray-600 mt-1 font-bold print:text-sm">{experience.position} ({experience.duration})</p>
               <a className="mb-1 print:text-sm" href={experience.url} target="_blank">
                 {experience.company}
