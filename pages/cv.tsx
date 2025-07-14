@@ -2,7 +2,7 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/20/solid";
-import { projects, technicalSkills, workExperiences } from "../components/shared/details";
+import { projects, summaryText, techstackText, workExperiences } from "../components/shared/details";
 
 type SectionProps = {
   title: string;
@@ -87,17 +87,13 @@ const CV = () => {
         </div>
       </div>
 
-      {/* Technical Skills */}
-      <Section title="Technical Skills">
-        <ul className="list-disc list-inside text-gray-700 mt-2 print:text-xs">
-          {
-            technicalSkills.map((skill) => (
-              <li key={skill.category}>
-                <strong>{skill.category}:</strong> {skill.skills.join(", ")}
-              </li>
-            ))
-          }
-        </ul>
+      <Section title="Summary">
+        <p className="text-gray-700 mt-2 print:text-xs">
+          { summaryText }
+        </p>
+        <p className="text-gray-700 mt-2 print:text-xs">
+          { techstackText }
+        </p>
       </Section>
       {/* Work Experience */}
       <Section title="Work Experience">
