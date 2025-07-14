@@ -113,7 +113,7 @@ export const workExperiences = [
     duration: "May 2023 – Present",
     description: "Working as Full-Stack Developer on the HotHealth application — a Digital Front Door and Patient Portal for healthcare organisations. Led the development of high-impact features by translating complex requirements into scalable solutions, optimised for high traffic and performance. Worked closely with cross-functional teams to build robust modules, integrate third-party systems, and manage complex business logic to support diverse healthcare workflows.",
     archivements: [
-      "Optimised application performance, significantly reducing average response time by 40% (5s to under 3s) through code refactoring and database query optimisation.",
+      "Optimised application performance, significantly reducing average response time fom 7s to under 3s through code refactoring and database query optimisation.",
       "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
       "Increased test coverage of the HotHealth application from under 20% to over 80%, significantly improving code reliability and maintainability.",
       "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
