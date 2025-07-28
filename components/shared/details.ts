@@ -158,7 +158,7 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://www.cyberlogitec.com",
     duration: "Sept 2018 – Feb 2020",
-    description: "Worked as a Full-Stack Developer on the BACS system, a tool for managing containers and vessels, and SNIPE, a pricing support tool designed to handle user requests related to logistics calculations and checks.",
+    description: "Worked on BACS (a container and vessel management system) and SNIPE (a logistics pricing support tool) to streamline operations in the shipping and logistics sector.",
     archivements: [
       "Awarded Best Growth of the Year for outstanding performance and contributions to the team.",
       "Delivered the BACS system — a comprehensive container and vessel management tool — improving operational efficiency.",
