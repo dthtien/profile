@@ -111,7 +111,7 @@ export const workExperiences = [
     position: "Senior Full-Stack Developer",
     url: "https://www.global-health.com/",
     duration: "May 2023 – Present",
-    description: "Contributing to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions. Translating complex business requirements into robust features, integrated third-party systems, and collaborated across teams to support diverse healthcare workflows.",
+    description: "Contributing to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
     archivements: [
       "Optimised application performance, significantly reducing average response time fom 7s to under 3s through code refactoring and database query optimisation.",
       "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
@@ -135,7 +135,7 @@ export const workExperiences = [
     position: "Intermediate Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
-    description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS. Focused on delivering scalable backend systems, seamless integrations, and optimised performance.",
+    description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
       "Improved system performance by optimising database queries reduce haft of querying time from 6 seconds to under 3 seconds and introducing effective caching and indexing strategies.",
