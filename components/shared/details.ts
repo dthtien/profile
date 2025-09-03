@@ -7,11 +7,8 @@ export const projects = [
       website: "https://www.ozvfy.com/"
     },
     specs: [
-      "Built with ReactJS and Rails for deal aggregation and car insurance comparison.",
-      "Implemented daily data scraping using Sidekiq and custom web crawlers.",
+      "Built a Rails + ReactJS app for deal aggregation and insurance comparison, featuring automated scraping, CI/CD, and number plate lookup.",
       "Designed Material Design-inspired UI and deployed frontend to Vercel.",
-      "Enabled car detail lookup via number plate input.",
-      "Configured CI/CD with GitHub Actions, Docker, Nginx, Puma.",
       "Integrated APIs including Facebook Graph and Slack."
     ]
   },
@@ -45,13 +42,11 @@ export const projects = [
 ]
 
 export const summaryText = `
-I'm a Full-Stack Developer with 6+ years of experience specializing in Ruby on Rails and 2+ years of React development.
-My focus is building scalable, high-performance web applications and APIs, with expertise spanning backend development, front-end integration, CI/CD pipelines, and cloud deployment.
-I’m passionate about creating clean, test-driven code and designing systems that solve real-world problems. My motivation lies in building products that make a meaningful impact on users and businesses.
+Full-Stack Developer with 6+ years of experience in Ruby on Rails and 2+ years in ReactJS. Skilled in building scalable web applications and APIs, improving performance, and delivering clean, test-driven code. Experienced across backend, frontend, CI/CD, and cloud deployment (AWS, Heroku).
 `
 
 export const techstackText = `
-My technical stack includes Ruby, JavaScript, Rails, React, Sidekiq, PostgreSQL, Docker, and cloud platforms like AWS and Heroku.
+My technical stack includes Ruby, JavaScript, Rails, ReactJS, Sidekiq, Rspec, PostgreSQL, Docker, and cloud platforms like AWS and Heroku.
 `
 
 export const technicalSkills = [
@@ -113,7 +108,7 @@ export const workExperiences = [
     duration: "May 2023 – Present",
     description: "Contributing to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
     archivements: [
-      "Optimised application performance, significantly reducing average response time fom 7s to under 3s through code refactoring and database query optimisation.",
+      "Optimised application performance, reduced response time by 60% (7s → <3s) through code refactoring and database query optimisation.",
       "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
       "Increased test coverage of the HotHealth application from under 20% to over 80%, significantly improving code reliability and maintainability.",
       "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
@@ -138,7 +133,7 @@ export const workExperiences = [
     description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
-      "Improved system performance by optimising database queries reduce haft of querying time from 6 seconds to under 3 seconds and introducing effective caching and indexing strategies.",
+      "Improved system performance by optimising database queries reduce haft of the querying time from 6 seconds to under 3 seconds and introducing effective caching and indexing strategies.",
       "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
       "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
       "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."

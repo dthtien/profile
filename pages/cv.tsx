@@ -107,7 +107,7 @@ const CV = () => {
 
               <p className="text-gray-600 mt-1 print:text-xs">{experience.description}</p>
               <p className="text-gray-600 my-1 print:text-xs">
-                <strong>Key Archivements:</strong>
+                <strong>Key Archievements:</strong>
               </p>
               <ul className="list-disc list-inside text-gray-700 print:text-xs">
                 {
