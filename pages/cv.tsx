@@ -107,7 +107,7 @@ const CV = () => {
 
               <p className="text-gray-600 mt-1 print:text-xs">{experience.description}</p>
               <p className="text-gray-600 my-1 print:text-xs">
-                <strong>Key Archievements:</strong>
+                <strong>Key Achievements:</strong>
               </p>
               <ul className="list-disc list-inside text-gray-700 print:text-xs">
                 {
@@ -190,7 +190,7 @@ const CV = () => {
       <Section title="Education">
         <div className="text-gray-700 mt-2">
           <p className="font-bold print:text-sm">Bachelor of Engineering (Software) (2014 - 2019)</p>
-          <p className="text-sm print:text-xs">Viet Nam National University HCMC - University Of Information Technology</p>
+          <p className="text-sm print:text-xs">Vietnam National University HCMC - University Of Information Technology</p>
         </div>
         <p className="mt-2 print:text-sm">Major: <strong>Information System</strong> </p>
       </Section>

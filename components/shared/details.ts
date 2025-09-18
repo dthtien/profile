@@ -114,7 +114,7 @@ export const workExperiences = [
       "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
       "Streamlined CI/CD pipelines, reducing deployment time from 11 minutes to under 6 minutes.",
       "Led cross-functional collaboration to implement the pre-admission form submission feature across integrated platforms.",
-      "Mentored junior developers, improving onboarding efficiency and fostering a culture of collaboration and knowledge sharing."
+      "Mentored junior developers, improved onboarding efficiency and fostered a culture of collaboration and knowledge sharing."
     ],
     techStack: [
       "Ruby on Rails",
@@ -133,7 +133,7 @@ export const workExperiences = [
     description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
-      "Improved system performance by optimising database queries reduce haft of the querying time from 6 seconds to under 3 seconds and introducing effective caching and indexing strategies.",
+      "Improved system performance by optimising database queries reduced query time by 50% (6s → under 3s) and introducing effective caching and indexing strategies.",
       "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
       "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
       "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."
