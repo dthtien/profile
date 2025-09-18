@@ -59,7 +59,7 @@ const Skills = () => (
           </dt>
           <dd className="flex mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
             <Icon src="/icons/ruby-on-rails.svg" alt="Ruby on Rails" />
-            <Icon src="/icons/react-js.svg" alt="React JS" />
+            <Icon src="/icons/react-js.svg" alt="ReactJS" />
             <Icon src="/icons/jquery.svg" alt="Jquery" />
           </dd>
         </div>

@@ -133,7 +133,7 @@ export const workExperiences = [
     description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
-      "Improved system performance by optimising database queries reduced query time by 50% (6s → under 3s) and introducing effective caching and indexing strategies.",
+      "Improved system performance by optimising database queries, reduced query time by 50% (6s → under 3s) and introducing effective caching and indexing strategies.",
       "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
       "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
       "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."
@@ -160,7 +160,7 @@ export const workExperiences = [
       "Independently developed a full-featured website from concept to deployment, demonstrating strong full-stack development capabilities.",
       "Optimised search functionality using Elasticsearch, resulting in significantly faster queries and enhanced user experience.",
       "Built test suites from the ground up to improve code coverage and QA processes, ensuring consistent, high-quality software delivery.",
-      "Consolidated multiple duplicated pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead."
+      "Consolidated duplicate pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead."
     ],
     techStack: [
       "Ruby on Rails",
