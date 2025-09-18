@@ -108,7 +108,7 @@ export const workExperiences = [
     duration: "May 2023 – Present",
     description: "Contributing to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
     archivements: [
-      "Optimised application performance, reduced response time by 60% (7s → <3s) through code refactoring and database query optimisation.",
+      "Optimised application performance, reduced response time by 60% (7s → under 3s) through code refactoring and database query optimisation.",
       "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
       "Increased test coverage of the HotHealth application from under 20% to over 80%, significantly improving code reliability and maintainability.",
       "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
