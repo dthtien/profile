@@ -5,6 +5,7 @@ import Nav from './Nav'
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
     <Head>
+      <meta name="facebook-domain-verification" content="qi665ev6sz6icnzzwelbbtgtkzfftc" />
       <title>Dau The Tien</title>
     </Head>
     <div className="relative bg-white overflow-hidden font-be-vietnam-pro">
