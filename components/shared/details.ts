@@ -42,7 +42,7 @@ export const projects = [
 ]
 
 export const summaryText = `
-Full-Stack Developer with 6+ years of experience in Ruby on Rails and 2+ years in ReactJS. Skilled in building scalable web applications and APIs, improving performance, and delivering clean, test-driven code. Experienced across backend, frontend, CI/CD, and cloud deployment (AWS, Heroku).
+Full-Stack Developer with 7+ years of experience in Ruby on Rails and 2+ years in ReactJS. Skilled in building scalable web applications and APIs, improving performance, and delivering clean, test-driven code. Experienced across backend, frontend, CI/CD, and cloud deployment (AWS, Heroku).
 `
 
 export const techstackText = `
@@ -102,11 +102,33 @@ export const technicalSkills = [
 
 export const workExperiences = [
   {
+    company: "Dealer Studio – Australia",
+    position: "Senior Full-Stack Developer",
+    url: "https://www.dealerstudio.com.au/",
+    duration: "Oct 2025 – Present",
+    description: "Contributing to Dealer Studio — an end-to-end eCommerce platform for automotive dealerships covering dealer websites, lead management, and vehicle aggregation — by building scalable backend services and rich frontend experiences.",
+    archivements: [
+      "Developed and maintained core platform features with Ruby on Rails and ReactJS, supporting dealer websites, lead capture, and vehicle inventory management.",
+      "Built AI-powered features, integrating LLM services into customer engagement and lead qualification workflows to improve conversion rates.",
+      "Designed and maintained third-party integrations with automotive data providers, CRMs, and finance/insurance services, ensuring reliable data exchange across the dealer ecosystem.",
+      "Implemented background processing pipelines with Sidekiq and Redis for vehicle feed ingestion, data synchronisation, and notification delivery.",
+      "Collaborated with product and design teams to ship customer-facing features end to end, from API design through to responsive React UIs."
+    ],
+    techStack: [
+      "Ruby on Rails",
+      "ReactJS",
+      "Sidekiq",
+      "Redis",
+      "PostgreSQL",
+      "AI/LLM integration",
+    ]
+  },
+  {
     company: "Global Health – Melbourne, VIC",
     position: "Senior Full-Stack Developer",
     url: "https://www.global-health.com/",
-    duration: "May 2023 – Present",
-    description: "Contributing to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
+    duration: "May 2023 – Sept 2025",
+    description: "Contributed to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
     archivements: [
       "Optimised application performance, reduced response time by 60% (7s → under 3s) through code refactoring and database query optimisation.",
       "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
