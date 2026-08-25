@@ -2,9 +2,18 @@ import Image from "next/image";
 
 const experiences = [
   {
-    name: "Employment Hero",
+    name: "Dealer Studio",
+    title: "Intermediate Software Engineer - Rails and ReactJS",
+    time: "Oct 2025 - Present",
+    imageSrc: "/images/dealer-studio.png",
+    imageAlt: "Dealer Studio | End-to-end eCommerce for automotive dealerships",
+    href: "https://www.dealerstudio.com.au/",
+    address: "Australia",
+  },
+  {
+    name: "Global Health",
     title: "Fullstack devloper - Ruby on Rails",
-    time: "May 2023 - Present",
+    time: "May 2023 - Sept 2025",
     imageSrc: "/icons/gh.webp",
     imageAlt: "Global Health (ASX:GLH) | Connecting Clinicians and Consumers",
     href: "https://www.global-health.com/",

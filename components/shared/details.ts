@@ -1,5 +1,21 @@
 export const projects = [
   {
+    name: "Tradies Platform",
+    title: "A multi-tenant SaaS for trade and service businesses, covering the full lead → quote → deposit → job → invoice → payment lifecycle.",
+    urls: {
+      github: "https://github.com/dthtien/service_platform_api",
+      website: "https://elineelectrics.com.au/"
+    },
+    specs: [
+      "Built a Rails 8 API and React 19 (Vite + TypeScript + Tailwind) frontend, with every record scoped per organisation for multi-tenant isolation.",
+      "Developed an AI chat-to-quote flow with OpenAI function calling, turning a public visitor conversation into a structured lead and draft quote with line items and deposits.",
+      "Added AI-assisted blog authoring with image upload and embedding, plus sitemap and robots.txt generation for SEO.",
+      "Integrated Stripe Checkout and webhooks for deposits and invoice payments, and Google Reviews for reputation display.",
+      "Implemented Devise + JWT authentication with Google OAuth, Sidekiq + Redis background jobs, and Alba serializers.",
+      "Deployed to a VPS with Kamal, and enforced a green-check gate of RSpec, RuboCop, Brakeman, ESLint, and production build before every push."
+    ]
+  },
+  {
     name: "DealHub",
     title: "A web application displaying updated deals from Australian online stores, with a car insurance price comparison feature.",
     urls: {
@@ -96,6 +112,7 @@ export const technicalSkills = [
       "RSpec",
       "Minitest",
       "Jest",
+      "Vitest",
     ]
   }
 ]
@@ -103,7 +120,7 @@ export const technicalSkills = [
 export const workExperiences = [
   {
     company: "Dealer Studio – Australia",
-    position: "Senior Full-Stack Developer",
+    position: "Intermediate Software Engineer",
     url: "https://www.dealerstudio.com.au/",
     duration: "Oct 2025 – Present",
     description: "Contributing to Dealer Studio — an end-to-end eCommerce platform for automotive dealerships covering dealer websites, lead management, and vehicle aggregation — by building scalable backend services and rich frontend experiences.",
@@ -120,6 +137,8 @@ export const workExperiences = [
       "Sidekiq",
       "Redis",
       "PostgreSQL",
+      "RSpec",
+      "Vitest",
       "AI/LLM integration",
     ]
   },
