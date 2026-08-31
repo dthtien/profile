@@ -9,10 +9,6 @@ export const availability = {
 
 export const coreStrengths = [
   {
-    title: "Production LLM work",
-    detail: "Shipped AI into two live products: LLM-backed lead qualification at Dealer Studio, and an OpenAI function-calling flow that turns a visitor conversation into a structured lead and a draft quote with line items."
-  },
-  {
     title: "Third-party integration",
     detail: "Automotive data providers, CRMs, finance and insurance services, Go1 LMS, Stripe, Facebook Graph, Google OAuth. Undocumented partner APIs, edge cases, retries, and failure handling."
   },
@@ -27,6 +23,10 @@ export const coreStrengths = [
   {
     title: "Regulated-domain experience",
     detail: "Healthcare patient portal work across patient records, PII, and pre-admission forms, built to the privacy, consent, and access-control requirements of healthcare compliance."
+  },
+  {
+    title: "Production LLM work",
+    detail: "Shipped an OpenAI function-calling flow into a live product for Eline Electrics, turning a public visitor conversation into a structured lead and a draft quote with line items."
   }
 ]
 
@@ -173,7 +173,6 @@ export const workExperiences = [
     duration: "Oct 2025 – Present",
     description: "End-to-end eCommerce platform for automotive dealerships, covering dealer websites, lead management, and vehicle aggregation.",
     archivements: [
-      "Shipped LLM-backed features into production, wiring AI services into customer engagement and lead qualification so enquiries are triaged by intent rather than arrival order.",
       "Built and maintained third-party integrations with automotive data providers, CRMs, and finance and insurance services, handling undocumented partner APIs, per-partner edge cases, retries, and failure paths.",
       "Ran background processing on Sidekiq and Redis for vehicle feed ingestion, data synchronisation, and notification delivery.",
       "Delivered features end to end from API design to responsive React UIs, covered by RSpec and Vitest."
@@ -186,7 +185,6 @@ export const workExperiences = [
       "PostgreSQL",
       "RSpec",
       "Vitest",
-      "AI/LLM integration",
     ]
   },
   {
