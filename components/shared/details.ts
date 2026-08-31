@@ -1,69 +1,44 @@
-export const projects = [
+export const positioningText = "Rails specialist for legacy rescue, third-party integrations, and shipping AI features to production."
+
+export const availability = {
+  status: "Available now for contract engagements",
+  commitment: "40 hrs/week · ABN registered",
+  location: "Melbourne, VIC · AEST/AEDT (UTC+10/+11)",
+  overlap: "Full overlap AU/NZ · partial overlap US West"
+}
+
+export const coreStrengths = [
   {
-    name: "Tradies Platform",
-    title: "A multi-tenant SaaS for trade and service businesses, covering the full lead → quote → deposit → job → invoice → payment lifecycle.",
-    urls: {
-      github: "https://github.com/dthtien/service_platform_api",
-      website: "https://elineelectrics.com.au/"
-    },
-    specs: [
-      "Built a Rails 8 API and React 19 (Vite + TypeScript + Tailwind) frontend, with every record scoped per organisation for multi-tenant isolation.",
-      "Developed an AI chat-to-quote flow with OpenAI function calling, turning a public visitor conversation into a structured lead and draft quote with line items and deposits.",
-      "Added AI-assisted blog authoring with image upload and embedding, plus sitemap and robots.txt generation for SEO.",
-      "Integrated Stripe Checkout and webhooks for deposits and invoice payments, and Google Reviews for reputation display.",
-      "Implemented Devise + JWT authentication with Google OAuth, Sidekiq + Redis background jobs, and Alba serializers.",
-      "Deployed to a VPS with Kamal, and enforced a green-check gate of RSpec, RuboCop, Brakeman, ESLint, and production build before every push."
-    ]
+    title: "Production LLM work",
+    detail: "Shipped AI into two live products: LLM-backed lead qualification at Dealer Studio, and an OpenAI function-calling flow that turns a visitor conversation into a structured lead and a draft quote with line items."
   },
   {
-    name: "DealHub",
-    title: "A web application displaying updated deals from Australian online stores, with a car insurance price comparison feature.",
-    urls: {
-      github: "https://github.com/dthtien/deal-hub-backend",
-      website: "https://www.ozvfy.com/"
-    },
-    specs: [
-      "Built a Rails + ReactJS app for deal aggregation and insurance comparison, featuring automated scraping, CI/CD, and number plate lookup.",
-      "Designed Material Design-inspired UI and deployed frontend to Vercel.",
-      "Integrated APIs including Facebook Graph and Slack."
-    ]
+    title: "Third-party integration",
+    detail: "Automotive data providers, CRMs, finance and insurance services, Go1 LMS, Stripe, Facebook Graph, Google OAuth. Undocumented partner APIs, edge cases, retries, and failure handling."
   },
   {
-    name: "DWF",
-    title: "A distributed workflow runner using Sidekiq and Redis",
-    urls: {
-      github: "https://github.com/dthtien/wf",
-      website: "https://rubygems.org/gems/dwf"
-    },
-    specs: [
-      "Developed a distributed workflow runner using Sidekiq and Redis for efficient background processing.",
-      "Implemented comprehensive test suite with RSpec and CI/CD pipeline using GitHub Actions.",
-      "Published as the RubyGem 'dwf' with clear documentation, gaining significant community adoption."
-    ]
+    title: "Payments and money flows",
+    detail: "Stripe Checkout plus signature-verified webhooks for deposits and invoice payments, reconciled back to invoice status and lead deposit state."
   },
   {
-    name: "TopLand",
-    title: "A real estate statistics application for Ho Chi Minh City, Vietnam",
-    urls: {
-      github: "https://github.com/dthtien/real_estate_researcher"
-    },
-    specs: [
-      "Built a ReactJS/Redux/Rails real estate statistics app for Ho Chi Minh City.",
-      "Deployed API to Azure VPS using Capistrano and frontend to Heroku.",
-      "Implemented Material Design UI with daily data scraping via Sidekiq.",
-      "Configured CI/CD with CircleCI, Nginx, Puma, and Let's Encrypt.",
-      "Integrated Facebook Graph API, Google Analytics, Skylight, and Slack."
-    ]
+    title: "Multi-tenant SaaS architecture",
+    detail: "Shared-schema, row-level tenancy: every record carries an organization_id and is reachable only through its organisation association, with membership-based role checks at the controller boundary."
+  },
+  {
+    title: "Regulated-domain experience",
+    detail: "Healthcare patient portal work across patient records, PII, and pre-admission forms, built to the privacy, consent, and access-control requirements of healthcare compliance."
   }
 ]
 
 export const summaryText = `
-Full-Stack Developer with 7+ years of experience in Ruby on Rails and 2+ years in ReactJS. Skilled in building scalable web applications and APIs, improving performance, and delivering clean, test-driven code. Experienced across backend, frontend, CI/CD, and cloud deployment (AWS, Heroku).
+Full-Stack Developer with 7+ years in Ruby on Rails and 5+ years in ReactJS. I get hired for legacy Rails rescue, third-party integration work, and shipping AI features to production, across healthcare, HR, automotive, and logistics.
 `
 
 export const techstackText = `
-My technical stack includes Ruby, JavaScript, Rails, ReactJS, Sidekiq, Rspec, PostgreSQL, Docker, and cloud platforms like AWS and Heroku.
+Ruby, JavaScript, TypeScript, Rails, ReactJS, Sidekiq, Redis, PostgreSQL, Elasticsearch, RSpec, Minitest, Vitest, Docker, Kamal, GitHub Actions, AWS, Heroku.
 `
+
+export const openSourceText = "dwf - distributed workflow runner built on Sidekiq and Redis, published as a RubyGem with 24k+ downloads. github.com/dthtien/wf"
 
 export const technicalSkills = [
   {
@@ -71,6 +46,7 @@ export const technicalSkills = [
     skills: [
       "Ruby",
       "JavaScript",
+      "TypeScript",
     ]
   },
   {
@@ -82,9 +58,19 @@ export const technicalSkills = [
     ]
   },
   {
+    category: "AI",
+    skills: [
+      "OpenAI API",
+      "Function calling",
+      "LLM integration",
+    ]
+  },
+  {
     category: "Databases",
     skills: [
       "PostgreSQL",
+      "Redis",
+      "Elasticsearch",
     ]
   },
   {
@@ -107,6 +93,15 @@ export const technicalSkills = [
     ]
   },
   {
+    category: "Payments and Integrations",
+    skills: [
+      "Stripe",
+      "OAuth 2.0",
+      "REST APIs",
+      "Webhooks",
+    ]
+  },
+  {
     category: "Testing",
     skills: [
       "RSpec",
@@ -117,19 +112,71 @@ export const technicalSkills = [
   }
 ]
 
+export const projects = [
+  {
+    name: "Tradies Platform",
+    title: "A multi-tenant SaaS for trade and service businesses, covering the full lead to quote to deposit to job to invoice to payment lifecycle.",
+    urls: {
+      github: "https://github.com/dthtien/service_platform_api",
+      website: "https://elineelectrics.com.au/"
+    },
+    specs: [
+      "Built an AI chat-to-quote flow with OpenAI function calling that turns a public visitor conversation into a structured lead and a draft quote with line items and deposits.",
+      "Designed shared-schema multi-tenancy where every record is scoped to an organisation and reached only through its association, with membership-based role checks.",
+      "Integrated Stripe Checkout and signature-verified webhooks for deposits and invoice payments, plus Devise + JWT auth with Google OAuth.",
+      "Shipped it live on a VPS with Kamal, behind a green-check gate of RSpec, RuboCop, Brakeman, and ESLint on every push."
+    ]
+  },
+  {
+    name: "DealHub",
+    title: "A web application displaying updated deals from Australian online stores, with a car insurance price comparison feature.",
+    urls: {
+      github: "https://github.com/dthtien/deal-hub-backend",
+      website: "https://www.ozvfy.com/"
+    },
+    specs: [
+      "Built a Rails + ReactJS app for deal aggregation and insurance comparison, with automated scraping and number plate lookup.",
+      "Integrated the Facebook Graph and Slack APIs, and ran the whole thing through CI/CD."
+    ]
+  },
+  {
+    name: "DWF",
+    cvHidden: true,
+    title: "A distributed workflow runner using Sidekiq and Redis",
+    urls: {
+      github: "https://github.com/dthtien/wf",
+      website: "https://rubygems.org/gems/dwf"
+    },
+    specs: [
+      "Developed a distributed workflow runner using Sidekiq and Redis for background processing.",
+      "Published as the RubyGem 'dwf' with 24k+ downloads, covered by RSpec and GitHub Actions CI."
+    ]
+  },
+  {
+    name: "TopLand",
+    cvHidden: true,
+    title: "A real estate statistics application for Ho Chi Minh City, Vietnam",
+    urls: {
+      github: "https://github.com/dthtien/real_estate_researcher"
+    },
+    specs: [
+      "Built a ReactJS/Redux/Rails real estate statistics app with daily Sidekiq scraping, deployed to an Azure VPS with Capistrano and CircleCI."
+    ]
+  }
+]
+
 export const workExperiences = [
   {
     company: "Dealer Studio – Australia",
     position: "Intermediate Software Engineer",
     url: "https://www.dealerstudio.com.au/",
     duration: "Oct 2025 – Present",
-    description: "Contributing to Dealer Studio - an end-to-end eCommerce platform for automotive dealerships covering dealer websites, lead management, and vehicle aggregation - by building scalable backend services and rich frontend experiences.",
+    description: "End-to-end eCommerce platform for automotive dealerships, covering dealer websites, lead management, and vehicle aggregation.",
     archivements: [
-      "Developed and maintained core platform features with Ruby on Rails and ReactJS, supporting dealer websites, lead capture, and vehicle inventory management.",
-      "Built AI-powered features, integrating LLM services into customer engagement and lead qualification workflows to improve conversion rates.",
-      "Designed and maintained third-party integrations with automotive data providers, CRMs, and finance/insurance services, ensuring reliable data exchange across the dealer ecosystem.",
-      "Implemented background processing pipelines with Sidekiq and Redis for vehicle feed ingestion, data synchronisation, and notification delivery.",
-      "Collaborated with product and design teams to ship customer-facing features end to end, from API design through to responsive React UIs."
+      "Shipped LLM-backed features into production, wiring AI services into customer engagement and lead qualification so enquiries are triaged by intent rather than arrival order.",
+      "Built and maintained third-party integrations with automotive data providers, CRMs, and finance and insurance services, handling undocumented partner APIs, per-partner edge cases, retries, and failure paths.",
+      "Ran background processing on Sidekiq and Redis for vehicle feed ingestion, data synchronisation, and notification delivery.",
+      "Delivered features end to end from API design to responsive React UIs, covered by RSpec and Vitest."
     ],
     techStack: [
       "Ruby on Rails",
@@ -147,15 +194,13 @@ export const workExperiences = [
     position: "Senior Full-Stack Developer",
     url: "https://www.global-health.com/",
     duration: "May 2023 – Sept 2025",
-    description: "Contributed to the HotHealth platform - a Digital Front Door and Patient Portal for healthcare organisations - by designing scalable, high-performance solutions.",
+    description: "HotHealth, a Digital Front Door and patient portal for healthcare organisations.",
     archivements: [
-      "Optimised application performance, reduced response time by 60% (7s → under 3s) through code refactoring and database query optimisation.",
-      "Led the successful upgrade of Ruby on Rails from version 4 to 7 and Ruby from 2.6 to 3.3.1, ensuring full compatibility and performance improvements within 3.5 months.",
-      "Increased test coverage of the HotHealth application from under 20% to over 80%, significantly improving code reliability and maintainability.",
-      "Improved uptime and reliability by enhancing server configurations and implementing comprehensive monitoring and alerting with New Relic and Rollbar.",
-      "Streamlined CI/CD pipelines, reducing deployment time from 11 minutes to under 6 minutes.",
-      "Led cross-functional collaboration to implement the pre-admission form submission feature across integrated platforms.",
-      "Mentored junior developers, improved onboarding efficiency and fostered a culture of collaboration and knowledge sharing."
+      "Inherited a Rails 4 healthcare application at under 20% test coverage. Built coverage past 80%, then upgraded through to Rails 7 and Ruby 3.3 in 3.5 months with no production incidents.",
+      "Built patient-facing features across patient records, PII, and pre-admission forms, to the privacy, consent, and access-control requirements of healthcare compliance.",
+      "Cut response time 60% (7s to under 3s) by eliminating N+1 queries, adding covering indexes, and introducing caching.",
+      "Cut CI/CD pipeline time from 11 minutes to under 6, and raised uptime with New Relic and Rollbar monitoring and alerting.",
+      "Led cross-functional delivery of pre-admission form submission across integrated platforms, and mentored two juniors through the Rails upgrade work."
     ],
     techStack: [
       "Ruby on Rails",
@@ -171,13 +216,11 @@ export const workExperiences = [
     position: "Intermediate Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
-    description: "Contributed to the Employment Hero platform - a high-traffic HR and payroll management system - by developing and maintaining key modules including security groups, document management, and LMS.",
+    description: "High-traffic HR and payroll platform. Owned security groups, document management, and the LMS module.",
     archivements: [
-      "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
-      "Improved system performance by optimising database queries, reduced query time by 50% (6s → under 3s) and introducing effective caching and indexing strategies.",
-      "Led a complex migration of legacy data to a new PostgreSQL schema, ensuring data integrity and consistency throughout the process.",
-      "Contributed to the development of a mobile application, significantly improving the user experience and delivering a large-scale project on schedule.",
-      "Mentored junior developers, promoting a culture of knowledge sharing and continuous improvement within the team."
+      "Delivered the Learning Management System integration with Go1, negotiating their API contract, sync edge cases, and failure handling.",
+      "Cut query time 50% (6s to under 3s) through indexing and caching strategies on the platform's hottest paths.",
+      "Led a migration of legacy data to a new PostgreSQL schema, with integrity checks that kept the cutover clean."
     ],
     techStack: [
       "Ruby on Rails",
@@ -194,14 +237,11 @@ export const workExperiences = [
     position: "Full-Stack Developer",
     url: "https://www.cyberlogitec.com",
     duration: "Sept 2018 – Feb 2020",
-    description: "Worked on BACS (a container and vessel management system) and SNIPE (a logistics pricing support tool) to streamline operations in the shipping and logistics sector.",
+    description: "Shipping and logistics systems: BACS for container and vessel management, SNIPE for logistics pricing. Awarded Best Growth of the Year.",
     archivements: [
-      "Awarded Best Growth of the Year for outstanding performance and contributions to the team.",
-      "Delivered the BACS system - a comprehensive container and vessel management tool - improving operational efficiency.",
-      "Independently developed a full-featured website from concept to deployment, demonstrating strong full-stack development capabilities.",
-      "Optimised search functionality using Elasticsearch, resulting in significantly faster queries and enhanced user experience.",
-      "Built test suites from the ground up to improve code coverage and QA processes, ensuring consistent, high-quality software delivery.",
-      "Consolidated duplicate pagination gems into a single, reusable gem, streamlining pagination across projects and significantly reducing code complexity and maintenance overhead."
+      "Delivered BACS, a container and vessel management system, from concept through to deployment.",
+      "Optimised search with Elasticsearch, cutting query times across the logistics catalogue.",
+      "Consolidated duplicate pagination gems into one reusable gem, removing the maintenance overhead across projects."
     ],
     techStack: [
       "Ruby on Rails",

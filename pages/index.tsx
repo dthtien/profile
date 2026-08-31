@@ -8,7 +8,7 @@ import { useState } from "react";
 import Toast from "../components/Toast";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
-import { summaryText } from "../components/shared/details";
+import { availability, positioningText, summaryText } from "../components/shared/details";
 
 const Home: NextPage = () => {
   const [showToast, setShowToast] = useState(false);
@@ -25,8 +25,14 @@ const Home: NextPage = () => {
             Software Engineer
           </span>
         </h1>
+        <p className="mt-3 text-lg font-medium text-gray-800 sm:mt-5 sm:text-xl lg:mx-0">
+          { positioningText }
+        </p>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           { summaryText }
+        </p>
+        <p className="mt-3 text-sm text-gray-500 lg:mx-0">
+          {availability.status} · {availability.commitment} · {availability.location}
         </p>
       </div>
       <Contacts setShowToast={setShowToast} />
