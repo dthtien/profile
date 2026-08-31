@@ -29,7 +29,7 @@ const CoverLetter = () => {
       </p>
 
       <p className="mt-4">
-        In my current role at Global Health, I have led mission-critical initiatives such as upgrading legacy Rails applications, implementing CI/CD pipelines, and enhancing test coverage beyond 80%. At my previous position with Employment Hero, I collaborated with cross-functional teams to deliver secure, user-friendly platforms, integrated with multiple third-party providers. In addition to professional work, I actively contribute to open-source and develop side projects—from distributed workflow tools to real estate analytics platforms—reflecting my passion for clean, maintainable, and meaningful code.
+        In my current role at Global Health, I have led mission-critical initiatives such as upgrading legacy Rails applications, implementing CI/CD pipelines, and enhancing test coverage beyond 80%. At my previous position with Employment Hero, I collaborated with cross-functional teams to deliver secure, user-friendly platforms, integrated with multiple third-party providers. In addition to professional work, I actively contribute to open-source and develop side projects, from distributed workflow tools to real estate analytics platforms, reflecting my passion for clean, maintainable, and meaningful code.
       </p>
 
       <p className="mt-4">

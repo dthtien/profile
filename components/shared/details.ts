@@ -123,7 +123,7 @@ export const workExperiences = [
     position: "Intermediate Software Engineer",
     url: "https://www.dealerstudio.com.au/",
     duration: "Oct 2025 – Present",
-    description: "Contributing to Dealer Studio — an end-to-end eCommerce platform for automotive dealerships covering dealer websites, lead management, and vehicle aggregation — by building scalable backend services and rich frontend experiences.",
+    description: "Contributing to Dealer Studio - an end-to-end eCommerce platform for automotive dealerships covering dealer websites, lead management, and vehicle aggregation - by building scalable backend services and rich frontend experiences.",
     archivements: [
       "Developed and maintained core platform features with Ruby on Rails and ReactJS, supporting dealer websites, lead capture, and vehicle inventory management.",
       "Built AI-powered features, integrating LLM services into customer engagement and lead qualification workflows to improve conversion rates.",
@@ -171,7 +171,7 @@ export const workExperiences = [
     position: "Intermediate Full-Stack Developer",
     url: "https://employmenthero.com/",
     duration: "April 2020 – May 2023",
-    description: "Contributed to the Employment Hero platform — a high-traffic HR and payroll management system — by developing and maintaining key modules including security groups, document management, and LMS.",
+    description: "Contributed to the Employment Hero platform - a high-traffic HR and payroll management system - by developing and maintaining key modules including security groups, document management, and LMS.",
     archivements: [
       "Delivered the Learning Management System (LMS) integration with Go1, enhancing training capabilities across the platform.",
       "Improved system performance by optimising database queries, reduced query time by 50% (6s → under 3s) and introducing effective caching and indexing strategies.",
@@ -197,7 +197,7 @@ export const workExperiences = [
     description: "Worked on BACS (a container and vessel management system) and SNIPE (a logistics pricing support tool) to streamline operations in the shipping and logistics sector.",
     archivements: [
       "Awarded Best Growth of the Year for outstanding performance and contributions to the team.",
-      "Delivered the BACS system — a comprehensive container and vessel management tool — improving operational efficiency.",
+      "Delivered the BACS system - a comprehensive container and vessel management tool - improving operational efficiency.",
       "Independently developed a full-featured website from concept to deployment, demonstrating strong full-stack development capabilities.",
       "Optimised search functionality using Elasticsearch, resulting in significantly faster queries and enhanced user experience.",
       "Built test suites from the ground up to improve code coverage and QA processes, ensuring consistent, high-quality software delivery.",
