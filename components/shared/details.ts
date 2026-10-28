@@ -114,6 +114,19 @@ export const technicalSkills = [
 
 export const projects = [
   {
+    name: "GKeyboard",
+    cvHidden: true,
+    title: "An AI writing keyboard for iPhone that fixes grammar, rewrites a message in the right tone and translates as you type, in any app.",
+    urls: {
+      website: "https://gkeyboard.ozvfy.com/"
+    },
+    specs: [
+      "Built a native Swift keyboard extension and a Share sheet action, with a React Native companion app for setup and settings.",
+      "Backed by a Rails 8 API on Kamal that calls OpenAI with strict JSON-schema output; the server does not store the text being written and filters it from logs.",
+      "Autocorrect, word suggestions and spell check run on device; the AI is off in password, email and card fields, and no account is needed."
+    ]
+  },
+  {
     name: "Tradies Platform",
     title: "A multi-tenant SaaS for trade and service businesses, covering the full lead to quote to deposit to job to invoice to payment lifecycle.",
     urls: {
